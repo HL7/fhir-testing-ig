@@ -45,6 +45,11 @@
       <name value="index.html"/>
       <title value="Home Page"/>
       <generation value="markdown"/>
+      <page>
+        <name value="testing.html"/>
+        <title value="Using Test Script"/>
+        <generation value="html"/>
+      </page>
     </page>
     <parameter>
       <code>

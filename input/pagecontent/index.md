@@ -7,7 +7,7 @@ of several [R6 Additional Resources](https://build.fhir.org/resource.html#additi
 
 #### In this IG
 
-* The R6 [TestScript resource](StructureDefinition-TestScript.html), and [discussion about its use](index.html)
+* The R6 [TestScript resource](StructureDefinition-TestScript.html), and [discussion about its use](testing.html)
 * The R6 [TestReport resource](StructureDefinition-TestReport.html)
 * The R6 [TestPlan resource](StructureDefinition-TestPlan.html)
 * A simple approach to using [profiles for scoring](index.html). See [PIQI](https://build.fhir.org/ig/HL7/piqiimplementation/) for a more complex approach

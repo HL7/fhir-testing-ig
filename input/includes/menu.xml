@@ -1,7 +1,22 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
-  <li><a href="StructureDefinition-TestScript.html">TestScript</a></li>
-  <li><a href="StructureDefinition-TestReport.html">TestReport</a></li>
-  <li><a href="StructureDefinition-TestPlan.html">TestPlan</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Testing Resources<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="StructureDefinition-TestScript.html">TestScript</a></li>
+      <li><a href="StructureDefinition-TestReport.html">TestReport</a></li>
+      <li><a href="StructureDefinition-TestPlan.html">TestPlan</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="testing.html">Using Test Script</a></li>
+    </ul>
+  </li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>      

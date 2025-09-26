@@ -327,6 +327,7 @@
 <page deprecated="true" key="summary-reporting" name="Summary Reporting"/>
 <page key="toc" name="Table of Contents"/>
 <page deprecated="true" key="terminology" name="Terminology"/>
+<page key="testing" name="Using Test Script"/>
 <page deprecated="true" key="vte1" name="Venous Thromboembolism Prophylaxis (VTE-1)"/>
 <page deprecated="true" key="history" name="history"/>
 </specification>
