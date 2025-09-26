@@ -23,6 +23,17 @@
   <extension url="http://hl7.org/fhir/tools/StructureDefinition/entered-in-error-status">
     <valueString value=".status = entered-in-error"/>
   </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-resource-compartment">
+    <extension url="code">
+      <valueId value="Device"/>
+    </extension>
+    <extension url="param">
+      <valueString value="participant"/>
+    </extension>
+    <extension url="documentation">
+      <valueMarkdown value="This isn't actually a valid registration - added for testing purposes"/>
+    </extension>
+  </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/TestReport"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
