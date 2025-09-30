@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TestPlan xmlns="http://hl7.org/fhir">
+<TestPlan xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT">
   <id value="example"/>
   <url value="http://hl7.org/fhir/TestPlan/example"/>
   <identifier>
