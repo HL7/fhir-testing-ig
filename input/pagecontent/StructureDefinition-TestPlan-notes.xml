@@ -118,7 +118,9 @@ other tests in the TestPlan can be referenced in the expressions. Runners MAY ch
 FHIRPath syntax for such references:
 </p>
 <pre>
+{% raw %}
 {{%plan.suite('name').test('name').[data]('name').value}}
+{% endraw %}
 </pre>
 <p>
 The value is a direct reference to the root element in the whatever data is being referenced. 

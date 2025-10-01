@@ -49,7 +49,7 @@ testing framework defined in this specification:
 </table>
 
 <div style="display: none">
-{% include ip-statements.xhtml %}
-{% include dependency-table-short.xhtml %}
-{% include globals-table.xhtml %}
+{% include ip-statements-en.xhtml %}
+{% include dependency-table-short-en.xhtml %}
+{% include globals-table-en.xhtml %}
 </div>
