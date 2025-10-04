@@ -2,6 +2,7 @@
 <TestPlan xmlns="http://hl7.org/fhir">
   <id value="tx-example"/>
   <url value="http://hl7.org/fhir/TestPlan/tx-example"/>
+  <title value="Terminology Ecosystem Test Plan"/>
   <status value="draft"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <description value="This is a subset of the full [terminology ecosystem tests](https://github.com/HL7/fhir-tx-ecosystem-ig/tree/main/tests)"/>

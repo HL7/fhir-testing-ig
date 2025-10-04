@@ -14,8 +14,8 @@
   </extension>
   <url value="http://hl7.org/fhir/ValueSet/testplan-status"/>
   <version value="6.0.0"/>
-  <name value="TestPlanStatus"/>
-  <title value="TestPlanStatus"/>
+  <name value="TestPlanStatusValueSet"/>
+  <title value="Test Plan Status Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>

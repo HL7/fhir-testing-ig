@@ -14,8 +14,8 @@
   </extension>
   <url value="http://hl7.org/fhir/ValueSet/testplan-script-language"/>
   <version value="6.0.0"/>
-  <name value="TestPlanScriptLanguage"/>
-  <title value="TestPlanScriptLanguage"/>
+  <name value="TestPlanScriptLanguageValueSet"/>
+  <title value="Test Plan Script Language Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2025-02-24T10:56:24+04:00"/>

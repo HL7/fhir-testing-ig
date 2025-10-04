@@ -15,7 +15,7 @@
   <url value="http://hl7.org/fhir/testplan-assertion-type"/>
   <version value="6.0.0"/>
   <name value="TestPlanAssertionType"/>
-  <title value="TestPlanAssertionType"/>
+  <title value="Test Plan Assertion Type"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2025-02-24T10:56:24+04:00"/>

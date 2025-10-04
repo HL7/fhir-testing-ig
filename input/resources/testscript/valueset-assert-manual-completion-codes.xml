@@ -20,8 +20,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.3.702"/>
   </identifier>
   <version value="6.0.0"/>
-  <name value="AssertionManualCompletionType"/>
-  <title value="Assertion Manual Completion Type"/>
+  <name value="AssertionManualCompletionTypeValueSet"/>
+  <title value="Assertion Manual Completion Type Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-12-20T09:43:11-05:00"/>

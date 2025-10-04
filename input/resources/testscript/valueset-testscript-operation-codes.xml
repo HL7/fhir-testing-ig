@@ -24,8 +24,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.2.357"/>
   </identifier>
   <version value="6.0.0"/>
-  <name value="TestScriptOperationCode"/>
-  <title value="Test Script Operation Code"/>
+  <name value="TestScriptOperationCodeValueSet"/>
+  <title value="Test Script Operation Code Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>
