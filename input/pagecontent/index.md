@@ -3,7 +3,7 @@
 
 This IG documents the testing support that HL7 provides for 
 testing FHIR implementations. In includes the formal definition
-of several [R6 Additional Resources](https://build.fhir.org/resource.html#additional): TestScript, TestReport, and TestPlan.
+of several [R6 Additional Resources]({{site.data.fhir.path}}resource.html#additional): TestScript, TestReport, and TestPlan.
 
 #### In this IG
 

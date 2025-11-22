@@ -20,7 +20,7 @@ element where its usage may be limited, a TestScript author is directed to use t
 artifact-effectivePeriod</a> extension to provide this information.
 </p>
 <p>
-Please refer to the <a href="testscript-example-effective-period.html">Effective Period Test</a>
+Please refer to the <a href="TestScript-testscript-example-effective-period.html">Effective Period Test</a>
 Example TestScript to review the usage of this extension.
 </p>
 

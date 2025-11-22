@@ -22,7 +22,7 @@ tools, while others are intended to be used as a specification for manual testin
 <div>
 <h3>Boundaries and Relationships</h3>
 <p>
-The FHIR Specification defines another resource type called <a href="testscript.html">TestScript</a> that is used 
+The FHIR Specification defines another resource type called <a href="StructureDefinition-TestScript.html">TestScript</a> that is used 
 define test cases for the FHIR RESTful API. The TestScript resource differs from TestPlan in that it has a pre-defined
 implicit test runner that is suitable for its stated purpose of testing FHIR RESTful APIs. 
 </p>

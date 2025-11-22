@@ -4,7 +4,7 @@
 <a name="scope"></a>
 <h3>Scope and Usage</h3>
 <p>
-This resource is a <strong>Quality Reporting &amp; Testing</strong> resource from a FHIR Implementation Support perspective - see <a href="implsupport-module.html">Implementation Support Module</a>.
+This resource is a <strong>Quality Reporting &amp; Testing</strong> resource from a FHIR Implementation Support perspective - see <a href="{{site.data.fhir.path}}implsupport-module.html">Implementation Support Module</a>.
 </p>
 <p>
 The TestScript resource is used to define tests that can be executed against one or more FHIR clients and servers. The TestScript resource will typically contain
@@ -26,7 +26,7 @@ The purpose of the TestScript is to encode in an executable representation tests
   <li>to determine whether given FHIR clients and servers adhere and are conformant to the FHIR specification</li>
   <li>to determine whether the capabilities of two or more FHIR implementation capabilities are compatible and interoperable according to the FHIR specification</li>
 </ol>
-It might not be possible to fully automate the latter goal (especially with regards to business rules that might ride on top of different implementations), however the tests should be able to determine whether two servers support the operations, value sets, profiles, and extensions to exchange FHIR Resources; for example, the request sent and response returned from a <a href="operation-patient-everything.html">Patient $everything operation</a>.
+It might not be possible to fully automate the latter goal (especially with regards to business rules that might ride on top of different implementations), however the tests should be able to determine whether two servers support the operations, value sets, profiles, and extensions to exchange FHIR Resources; for example, the request sent and response returned from a <a href="{{site.data.fhir.path}}operation-patient-everything.html">Patient $everything operation</a>.
 </p>
 
 </div>
@@ -45,7 +45,7 @@ TestScript instances may be included as part of ImplementationGuides to help def
 choose to comply with the implementation guide.
 </p>
 <p>
-The FHIR Specification defines another resource type called <a href="testplan.html">TestPlan</a> that is used to define more generally 
+The FHIR Specification defines another resource type called <a href="StructureDefinition-TestPlan.html">TestPlan</a> that is used to define more generally 
 applicable sets of tests along with inputs and success criteria. TestPlan resources are used for testing 
 the behaviour of FHIR applications and ecosystems. As such, TestScript covers a subset of what TestPlan can 
 do, and does so with much more precision and detail, and without the requirement for an external runner definition. 
@@ -57,13 +57,13 @@ TestPlan should not be used for tests that can be specified using a TestScript r
 The following resources represent the FHIR conformance framework that are used to express the expected behavior of a FHIR compliant system:
 </p>
 <ul>
-  <li><a title="A value set specifies a set of codes drawn from one or more code systems." href="valueset.html">ValueSet</a> </li>
-  <li><a title="A statement of relationships from one set of concepts to one or more other concepts - either concepts in code systems, or data element/data element concepts, or classes in class models." href="conceptmap.html">ConceptMap</a> </li>
-  <li><a title="A definition of a FHIR structure. This resource is used to describe the underlying resources, data types defined in FHIR, and also for describing extensions, and constraints on resources and data types." href="structuredefinition.html">StructureDefinition</a> </li>
-  <li><a title="A capability statement is a set of capabilities of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation." href="capabilitystatement.html">CapabilityStatement</a> </li>
-  <li><a title="A formal computable definition of an operation (on the RESTful interface) or a named query (using the search interaction)." href="operationdefinition.html">OperationDefinition</a> </li>
-  <li><a title="A Search Parameter that defines a named search item that can be used to search/filter on a resource." href="searchparameter.html">SearchParameter</a> </li>
-  <li><a title="A set of rules or how FHIR is used to solve a particular problem. This resource is used to gather all the parts of an implementation guide into a logical whole, and to publish a computable definition of all the parts." href="implementationguide.html">ImplementationGuide</a> </li>
+  <li><a title="A value set specifies a set of codes drawn from one or more code systems." href="{{site.data.fhir.path}}valueset.html">ValueSet</a> </li>
+  <li><a title="A statement of relationships from one set of concepts to one or more other concepts - either concepts in code systems, or data element/data element concepts, or classes in class models." href="{{site.data.fhir.path}}conceptmap.html">ConceptMap</a> </li>
+  <li><a title="A definition of a FHIR structure. This resource is used to describe the underlying resources, data types defined in FHIR, and also for describing extensions, and constraints on resources and data types." href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a> </li>
+  <li><a title="A capability statement is a set of capabilities of a FHIR Server that may be used as a statement of actual server functionality or a statement of required or desired server implementation." href="{{site.data.fhir.path}}capabilitystatement.html">CapabilityStatement</a> </li>
+  <li><a title="A formal computable definition of an operation (on the RESTful interface) or a named query (using the search interaction)." href="{{site.data.fhir.path}}operationdefinition.html">OperationDefinition</a> </li>
+  <li><a title="A Search Parameter that defines a named search item that can be used to search/filter on a resource." href="{{site.data.fhir.path}}searchparameter.html">SearchParameter</a> </li>
+  <li><a title="A set of rules or how FHIR is used to solve a particular problem. This resource is used to gather all the parts of an implementation guide into a logical whole, and to publish a computable definition of all the parts." href="{{site.data.fhir.path}}implementationguide.html">ImplementationGuide</a> </li>
 </ul>
 <p>
 

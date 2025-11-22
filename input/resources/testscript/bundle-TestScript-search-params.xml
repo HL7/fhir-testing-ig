@@ -370,4 +370,21 @@
       </SearchParameter>
     </resource>
   </entry>
+  <entry>
+    <resource>
+      <SearchParameter>
+        <id value="TestScript-experimental"/>
+        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
+          <valueString value="TestScript.experimental"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="normative"/>
+        </extension>
+        <description value="Whether the TestScript is experimental"/>
+        <code value="experimental"/>
+        <type value="token"/>
+        <expression value="TestScript.experimental"/>
+      </SearchParameter>
+    </resource>
+  </entry>
 </Bundle>

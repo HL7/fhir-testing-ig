@@ -1534,7 +1534,7 @@
 			<path value="TestScript.setup.action.assert.minimumId"/>
 			<short value="Fixture Id of minimum content resource"/>
 			<definition value="The ID of a fixture. Asserts that the response contains at a minimum the fixture specified by minimumId."/>
-			<comment value="Asserts that the response contains all the element/content in another fixture pointed to by minimumId. This can be a statically defined fixture or one that is dynamically set via responseId.&#xA;&#xA;See [Testing FHIR Use minimumId](testing.html##minimumId) for a more complete description of the test engine's comparison logic."/>
+			<comment value="Asserts that the response contains all the element/content in another fixture pointed to by minimumId. This can be a statically defined fixture or one that is dynamically set via responseId.&#xA;&#xA;See [Testing FHIR Use minimumId](testing.html#minimumId) for a more complete description of the test engine's comparison logic."/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>

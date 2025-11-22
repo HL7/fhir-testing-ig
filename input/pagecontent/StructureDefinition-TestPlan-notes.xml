@@ -6,14 +6,15 @@ The scope element defines what the TestPlan is testing. This serves no functiona
 of the tests, but is used to provide context for the TestPlan and its tests. The scope can be one of the following:
 </p>
 <ul>
-	<li><a href="actordefinition.html">ActorDefinition</a> - the TestPlan is intended to test a particular Actor system as defined somewhere</li>
-	<li><a href="implementationguide.html">ImplementationGuide</a> - the TestPlan is testing the system(s) defined in the implementation guide</li>
-	<li><a href="structuredefinition.html">StructureDefinition</a> - the TestPlan is testing the behavior associated with a particular Profile. Note that profiles don't specify behavior directly, so the relationship between the profile and what is being tested as at the discretion of the author</li>
-	<li><a href="capabilitystatement.html">CapabilityStatement</a> - the TestPlan is testing the behavior of the applications that do (or should) conform to a set of expectations defined in a CapabilityStatement. Note that TestScript is intended and suitable for testing CapabilityStatements directly, so the anticipation is that a TestPlan is testing more than just what is specified in the CapabilityStatement</li>
-	<li><a href="requirements.html">Requirements</a> - The TestPlan is testing systems that are intended to conform to a set of requirements. Again, there is no direct relationship
+	<li><a href="{{site.data.fhir.path}}actordefinition.html">ActorDefinition</a> - the TestPlan is intended to test a particular Actor system as defined somewhere</li>
+	<li><a href="{{site.data.fhir.path}}implementationguide.html">ImplementationGuide</a> - the TestPlan is testing the system(s) defined in the implementation guide</li>
+	<li><a href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a> - the TestPlan is testing the behavior associated with a particular Profile. Note that profiles don't specify behavior directly, so the relationship between the profile and what is being tested as at the discretion of the author</li>
+	<li><a href="{{site.data.fhir.path}}capabilitystatement.html">CapabilityStatement</a> - the TestPlan is testing the behavior of the applications that do (or should) conform to a set of expectations defined in a CapabilityStatement. Note that TestScript is intended and suitable for testing CapabilityStatements directly, so the anticipation is that a TestPlan is testing more than just what is specified in the CapabilityStatement</li>
+	<li><a href="{{site.data.fhir.path}}requirements.html">Requirements</a> - The TestPlan is testing systems that are intended to conform to a set of requirements. Again, there is no direct relationship
     between the requirements and testable systems, so the relationship is at the discretion of the author</li>
 </ul>
 
+<a name="defining"> </a>
 <h3>Defining the Runner</h3>
 <p>
 The runner is identified by a URL that is used to define what is required to execute the tests in the TestPlan.
@@ -133,7 +134,7 @@ there is no ability to use the FHIRPath expression, but most inputs and expected
 <h3>Test Reports</h3>
 
 <p>
-The outcomes of a TestPlan execution MAY be reported using the <a href="testreport.html">TestReport</a> resource,
+The outcomes of a TestPlan execution MAY be reported using the <a href="StructureDefinition-TestReport.html">TestReport</a> resource,
 though this is not required. Runners MAY choose to report the results in any format they like.
 </p>
 

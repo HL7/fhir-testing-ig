@@ -104,7 +104,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1718"
-   xlink:href="testscript-definitions.html#TestScript.url"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.url"><title
    id="title157840">An absolute URI that is used to identify this test script when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this test script is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the test script is stored on different servers</title>url</a> : <a
    id="n1719"
    xlink:href="datatypes.html#uri">uri</a> [0..1]</text>
@@ -115,7 +115,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1724"
-   xlink:href="testscript-definitions.html#TestScript.identifier"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.identifier"><title
    id="title157845">A formal identifier that is used to identify this test script when it is represented in other formats, or referenced in a specification, model, design or an instance</title>identifier</a> : <a
    id="n1725"
    xlink:href="datatypes.html#Identifier">Identifier</a> [0..*]</text>
@@ -126,7 +126,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1730"
-   xlink:href="testscript-definitions.html#TestScript.version"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.version"><title
    id="title157850">The identifier that is used to identify this version of the test script when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the test script author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence</title>version</a> : <a
    id="n1731"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -137,7 +137,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1736"
-   xlink:href="testscript-definitions.html#TestScript.versionAlgorithm_x_"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.versionAlgorithm_x_"><title
    id="title157855">Indicates the mechanism used to compare versions to determine which is more current</title>versionAlgorithm[x]</a> : <a
    id="n1737"
    xlink:href="types.html#DataType">DataType</a> [0..1] « <a
@@ -163,7 +163,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1754"
-   xlink:href="testscript-definitions.html#TestScript.name"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.name"><title
    id="title157866">A natural language name identifying the test script. This name should be usable as an identifier for the module by machine processing applications such as code generation</title>name</a> : <a
    id="n1755"
    xlink:href="datatypes.html#string">string</a> [1..1] « <a
@@ -178,7 +178,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1764"
-   xlink:href="testscript-definitions.html#TestScript.title"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.title"><title
    id="title157873">A short, descriptive, user-friendly title for the test script</title>title</a> : <a
    id="n1765"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -189,7 +189,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1770"
-   xlink:href="testscript-definitions.html#TestScript.status"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.status"><title
    id="title157878">The status of this test script. Enables tracking the life-cycle of the content (this element modifies the meaning of other elements)</title>status</a> : <a
    id="n1771"
    xlink:href="datatypes.html#code">code</a> [1..1] « <a
@@ -203,7 +203,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1780"
-   xlink:href="testscript-definitions.html#TestScript.experimental"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.experimental"><title
    id="title157885">A Boolean value to indicate that this test script is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage</title>experimental</a> : <a
    id="n1781"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1]</text>
@@ -214,7 +214,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1786"
-   xlink:href="testscript-definitions.html#TestScript.date"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.date"><title
    id="title157890">The date  (and optionally time) when the test script was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the test script changes</title>date</a> : <a
    id="n1787"
    xlink:href="datatypes.html#dateTime">dateTime</a> [0..1]</text>
@@ -225,7 +225,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1792"
-   xlink:href="testscript-definitions.html#TestScript.publisher"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.publisher"><title
    id="title157895">The name of the organization or individual responsible for the release and ongoing maintenance of the test script</title>publisher</a> : <a
    id="n1793"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -236,7 +236,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1798"
-   xlink:href="testscript-definitions.html#TestScript.contact"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.contact"><title
    id="title157900">Contact details to assist a user in finding and communicating with the publisher</title>contact</a> : <a
    id="n1799"
    xlink:href="metadatatypes.html#ContactDetail">ContactDetail</a> [0..*]</text>
@@ -247,7 +247,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1804"
-   xlink:href="testscript-definitions.html#TestScript.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.description"><title
    id="title157905">A free text natural language description of the test script from a consumer's perspective</title>description</a> : <a
    id="n1805"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -258,7 +258,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1810"
-   xlink:href="testscript-definitions.html#TestScript.useContext"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.useContext"><title
    id="title157910">The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate test script instances</title>useContext</a> : <a
    id="n1811"
    xlink:href="metadatatypes.html#UsageContext">UsageContext</a> [0..*]</text>
@@ -269,7 +269,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1816"
-   xlink:href="testscript-definitions.html#TestScript.jurisdiction"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.jurisdiction"><title
    id="title157915">A legal or geographic region in which the test script is intended to be used</title>jurisdiction</a> : <a
    id="n1817"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -283,7 +283,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1826"
-   xlink:href="testscript-definitions.html#TestScript.purpose"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.purpose"><title
    id="title157922">Explanation of why this test script is needed and why it has been designed as it has</title>purpose</a> : <a
    id="n1827"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -294,7 +294,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1832"
-   xlink:href="testscript-definitions.html#TestScript.copyright"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.copyright"><title
    id="title157927">A copyright statement relating to the test script and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the test script</title>copyright</a> : <a
    id="n1833"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -305,7 +305,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1838"
-   xlink:href="testscript-definitions.html#TestScript.copyrightLabel"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.copyrightLabel"><title
    id="title157932">A short string (&lt;50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved')</title>copyrightLabel</a> : <a
    id="n1839"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -316,7 +316,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1844"
-   xlink:href="testscript-definitions.html#TestScript.profile"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.profile"><title
    id="title157937">Reference to the profile to be used for validation</title>profile</a> : <a
    id="n1845"
    xlink:href="datatypes.html#canonical">canonical</a> [0..*] « <a
@@ -356,7 +356,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1855"
-   xlink:href="testscript-definitions.html#TestScript.origin.index"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.origin.index"><title
    id="title157947">Abstract name given to an origin server in this test script.  The name is provided as a number starting at 1</title>index</a> : <a
    id="n1856"
    xlink:href="datatypes.html#integer">integer</a> [1..1]</text>
@@ -367,7 +367,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1861"
-   xlink:href="testscript-definitions.html#TestScript.origin.profile"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.origin.profile"><title
    id="title157952">The type of origin profile the test system supports</title>profile</a> : <a
    id="n1862"
    xlink:href="datatypes.html#Coding">Coding</a> [1..1] « <a
@@ -381,7 +381,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1871"
-   xlink:href="testscript-definitions.html#TestScript.origin.url"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.origin.url"><title
    id="title157959">The explicit url path of the origin server used in this test script</title>url</a> : <a
    id="n1872"
    xlink:href="datatypes.html#url">url</a> [0..1]</text>
@@ -418,7 +418,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1880"
-   xlink:href="testscript-definitions.html#TestScript.destination.index"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.destination.index"><title
    id="title157968">Abstract name given to a destination server in this test script.  The name is provided as a number starting at 1</title>index</a> : <a
    id="n1881"
    xlink:href="datatypes.html#integer">integer</a> [1..1]</text>
@@ -429,7 +429,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1886"
-   xlink:href="testscript-definitions.html#TestScript.destination.profile"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.destination.profile"><title
    id="title157973">The type of destination profile the test system supports</title>profile</a> : <a
    id="n1887"
    xlink:href="datatypes.html#Coding">Coding</a> [1..1] « <a
@@ -443,7 +443,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1896"
-   xlink:href="testscript-definitions.html#TestScript.destination.url"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.destination.url"><title
    id="title157980">The explicit url path of the destination server used in this test script</title>url</a> : <a
    id="n1897"
    xlink:href="datatypes.html#url">url</a> [0..1]</text>
@@ -506,7 +506,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1908"
-   xlink:href="testscript-definitions.html#TestScript.metadata.link.url"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.link.url"><title
    id="title157993">URL to a particular requirement or feature within the FHIR specification</title>url</a> : <a
    id="n1909"
    xlink:href="datatypes.html#uri">uri</a> [1..1]</text>
@@ -517,7 +517,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1914"
-   xlink:href="testscript-definitions.html#TestScript.metadata.link.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.link.description"><title
    id="title157998">Short description of the link</title>description</a> : <a
    id="n1915"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -554,7 +554,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1923"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.required"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.required"><title
    id="title158007">Whether or not the test execution will require the given capabilities of the server in order for this test script to execute</title>required</a> : <a
    id="n1924"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1] « <a
@@ -569,7 +569,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1933"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.validated"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.validated"><title
    id="title158014">Whether or not the test execution will validate the given capabilities of the server in order for this test script to execute</title>validated</a> : <a
    id="n1934"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1] « <a
@@ -584,7 +584,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1943"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.description"><title
    id="title158021">Description of the capabilities that this test script is requiring the server to support</title>description</a> : <a
    id="n1944"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -595,7 +595,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1949"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.origin"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.origin"><title
    id="title158026">Which origin server these requirements apply to</title>origin</a> : <a
    id="n1950"
    xlink:href="datatypes.html#integer">integer</a> [0..*]</text>
@@ -606,7 +606,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1955"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.destination"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.destination"><title
    id="title158031">Which server these requirements apply to</title>destination</a> : <a
    id="n1956"
    xlink:href="datatypes.html#integer">integer</a> [0..1]</text>
@@ -617,7 +617,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1961"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.link"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.link"><title
    id="title158036">Links to the FHIR specification that describes this interaction and the resources involved in more detail</title>link</a> : <a
    id="n1962"
    xlink:href="datatypes.html#uri">uri</a> [0..*]</text>
@@ -628,7 +628,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1967"
-   xlink:href="testscript-definitions.html#TestScript.metadata.capability.capabilities"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability.capabilities"><title
    id="title158041">Minimum capabilities required of server for test script to execute successfully.   If server does not meet at a minimum the referenced capability statement, then all tests in this script are skipped</title>capabilities</a> : <a
    id="n1968"
    xlink:href="datatypes.html#canonical">canonical</a> [1..1] « <a
@@ -667,7 +667,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1978"
-   xlink:href="testscript-definitions.html#TestScript.scope.artifact"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.scope.artifact"><title
    id="title158051">The specific conformance artifact being tested. The canonical reference can be version-specific</title>artifact</a> : <a
    id="n1979"
    xlink:href="datatypes.html#canonical">canonical</a> [1..1] « <a
@@ -680,7 +680,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1986"
-   xlink:href="testscript-definitions.html#TestScript.scope.conformance"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.scope.conformance"><title
    id="title158057">The expectation of whether the test must pass for the system to be considered conformant with the artifact: required - all tests are expected to pass, optional - all test are expected to pass but non-pass status may be allowed, strict - all tests are expected to pass and warnings are treated as a failure</title>conformance</a> : <a
    id="n1987"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -702,7 +702,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2000"
-   xlink:href="testscript-definitions.html#TestScript.scope.phase"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.scope.phase"><title
    id="title158066">The phase of testing for this artifact: unit - development / implementation phase, integration - internal system to system phase, production - live system to system phase (Note, this may involve pii/phi data)</title>phase</a> : <a
    id="n2001"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -742,7 +742,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2013"
-   xlink:href="testscript-definitions.html#TestScript.fixture.autocreate"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.fixture.autocreate"><title
    id="title158077">Whether or not to implicitly create the fixture during setup. If true, the fixture is automatically created on each server being tested during setup, therefore no create operation is required for this fixture in the TestScript.setup section</title>autocreate</a> : <a
    id="n2014"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1]</text>
@@ -753,7 +753,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2019"
-   xlink:href="testscript-definitions.html#TestScript.fixture.autodelete"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.fixture.autodelete"><title
    id="title158082">Whether or not to implicitly delete the fixture during teardown. If true, the fixture is automatically deleted on each server being tested during teardown, therefore no delete operation is required for this fixture in the TestScript.teardown section</title>autodelete</a> : <a
    id="n2020"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1]</text>
@@ -764,7 +764,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2025"
-   xlink:href="testscript-definitions.html#TestScript.fixture.resource"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.fixture.resource"><title
    id="title158087">Reference to the resource (containing the contents of the resource needed for operations). This is allowed to be a Parameters resource</title>resource</a> : <a
    id="n2026"
    xlink:href="references.html#Reference">Reference</a> [0..1] « <a
@@ -803,7 +803,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2036"
-   xlink:href="testscript-definitions.html#TestScript.variable.name"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.name"><title
    id="title158097">Descriptive name for this variable</title>name</a> : <a
    id="n2037"
    xlink:href="datatypes.html#string">string</a> [1..1]</text>
@@ -814,7 +814,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2042"
-   xlink:href="testscript-definitions.html#TestScript.variable.defaultValue"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.defaultValue"><title
    id="title158102">A default, hard-coded, or user-defined value for this variable</title>defaultValue</a> : <a
    id="n2043"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -825,7 +825,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2048"
-   xlink:href="testscript-definitions.html#TestScript.variable.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.description"><title
    id="title158107">A free text natural language description of the variable and its purpose</title>description</a> : <a
    id="n2049"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -836,7 +836,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2054"
-   xlink:href="testscript-definitions.html#TestScript.variable.expression"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.expression"><title
    id="title158112">The FHIRPath expression for a specific value to evaluate against the fixture body. When variables are defined, only one of either expression, headerField or path must be specified</title>expression</a> : <a
    id="n2055"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -851,7 +851,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2064"
-   xlink:href="testscript-definitions.html#TestScript.variable.headerField"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.headerField"><title
    id="title158119">Will be used to grab the HTTP header field value from the headers that sourceId is pointing to</title>headerField</a> : <a
    id="n2065"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -866,7 +866,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2074"
-   xlink:href="testscript-definitions.html#TestScript.variable.hint"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.hint"><title
    id="title158126">Displayable text string with hint help information to the user when entering a default value</title>hint</a> : <a
    id="n2075"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -877,7 +877,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2080"
-   xlink:href="testscript-definitions.html#TestScript.variable.path"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.path"><title
    id="title158131">XPath or JSONPath to evaluate against the fixture body.  When variables are defined, only one of either expression, headerField or path must be specified</title>path</a> : <a
    id="n2081"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -892,7 +892,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2090"
-   xlink:href="testscript-definitions.html#TestScript.variable.sourceId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable.sourceId"><title
    id="title158138">Fixture to evaluate the XPath/JSONPath expression or the headerField  against within this variable</title>sourceId</a> : <a
    id="n2091"
    xlink:href="datatypes.html#id">id</a> [0..1]</text>
@@ -981,7 +981,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2105"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.type"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.type"><title
    id="title158155">Server interaction or operation type</title>type</a> : <a
    id="n2106"
    xlink:href="datatypes.html#Coding">Coding</a> [0..1] « <a
@@ -999,7 +999,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2119"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.resource"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.resource"><title
    id="title158164">The type of the FHIR resource. See the [resource list](resourcelist.html). Data type of uri is needed when non-HL7 artifacts are identified</title>resource</a> : <a
    id="n2120"
    xlink:href="datatypes.html#uri">uri</a> [0..1] « <a
@@ -1013,7 +1013,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2129"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.label"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.label"><title
    id="title158171">The label would be used for tracking/logging purposes by test engines</title>label</a> : <a
    id="n2130"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1024,7 +1024,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2135"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.description"><title
    id="title158176">The description would be used by test engines for tracking and reporting purposes</title>description</a> : <a
    id="n2136"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1035,7 +1035,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2141"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.accept"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.accept"><title
    id="title158181">The mime-type to use for RESTful operation in the 'Accept' header</title>accept</a> : <a
    id="n2142"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1049,7 +1049,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2151"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.contentType"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.contentType"><title
    id="title158188">The mime-type to use for RESTful operation in the 'Content-Type' header</title>contentType</a> : <a
    id="n2152"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1063,7 +1063,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2161"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.destination"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.destination"><title
    id="title158195">The server where the request message is destined for.  Must be one of the server numbers listed in TestScript.destination section</title>destination</a> : <a
    id="n2162"
    xlink:href="datatypes.html#integer">integer</a> [0..1]</text>
@@ -1074,7 +1074,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2167"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.encodeRequestUrl"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.encodeRequestUrl"><title
    id="title158200">Whether or not to implicitly send the request url in encoded format. The default is true to match the standard RESTful client behavior. Set to false when communicating with a server that does not support encoded url paths</title>encodeRequestUrl</a> : <a
    id="n2168"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1]</text>
@@ -1085,7 +1085,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2173"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.method"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.method"><title
    id="title158205">The HTTP method the test engine MUST use for this operation regardless of any other operation details</title>method</a> : <a
    id="n2174"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1099,7 +1099,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2183"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.origin"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.origin"><title
    id="title158212">The server where the request message originates from.  Must be one of the server numbers listed in TestScript.origin section</title>origin</a> : <a
    id="n2184"
    xlink:href="datatypes.html#integer">integer</a> [0..1]</text>
@@ -1110,7 +1110,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2189"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.params"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.params"><title
    id="title158217">Path plus parameters after [type].  Used to set parts of the request URL explicitly</title>params</a> : <a
    id="n2190"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1125,7 +1125,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2199"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.requestId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.requestId"><title
    id="title158224">The fixture id (maybe new) to map to the request</title>requestId</a> : <a
    id="n2200"
    xlink:href="datatypes.html#id">id</a> [0..1]</text>
@@ -1136,7 +1136,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2205"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.responseId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.responseId"><title
    id="title158229">The fixture id (maybe new) to map to the response</title>responseId</a> : <a
    id="n2206"
    xlink:href="datatypes.html#id">id</a> [0..1]</text>
@@ -1147,7 +1147,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2211"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.sourceId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.sourceId"><title
    id="title158234">The id of the fixture used as the body of a PUT or POST request</title>sourceId</a> : <a
    id="n2212"
    xlink:href="datatypes.html#id">id</a> [0..1] « <a
@@ -1162,7 +1162,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2221"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.targetId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.targetId"><title
    id="title158241">Id of fixture used for extracting the [id],  [type], and [vid] for GET requests</title>targetId</a> : <a
    id="n2222"
    xlink:href="datatypes.html#id">id</a> [0..1] « <a
@@ -1177,7 +1177,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2231"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.url"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.url"><title
    id="title158248">Complete request URL</title>url</a> : <a
    id="n2232"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1218,7 +1218,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2244"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.requestHeader.field"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.requestHeader.field"><title
    id="title158259">The HTTP header field e.g. &quot;Accept&quot;</title>field</a> : <a
    id="n2245"
    xlink:href="datatypes.html#string">string</a> [1..1]</text>
@@ -1229,7 +1229,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2250"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.operation.requestHeader.value"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.requestHeader.value"><title
    id="title158264">The value of the header e.g. &quot;application/fhir+xml&quot;</title>value</a> : <a
    id="n2251"
    xlink:href="datatypes.html#string">string</a> [1..1]</text>
@@ -1266,7 +1266,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2259"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.label"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.label"><title
    id="title158273">The label would be used for tracking/logging purposes by test engines</title>label</a> : <a
    id="n2260"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1277,7 +1277,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2265"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.description"><title
    id="title158278">The description would be used by test engines for tracking and reporting purposes</title>description</a> : <a
    id="n2266"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1288,7 +1288,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2271"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.direction"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.direction"><title
    id="title158283">The direction to use for the assertion</title>direction</a> : <a
    id="n2272"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1306,7 +1306,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2285"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.compareToSourceId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.compareToSourceId"><title
    id="title158292">Id of the source fixture used as the contents to be evaluated by either the &quot;source/expression&quot; or &quot;sourceId/path&quot; definition</title>compareToSourceId</a> : <a
    id="n2286"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1321,7 +1321,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2295"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.compareToSourceExpression"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.compareToSourceExpression"><title
    id="title158299">The FHIRPath expression for a specific value to evaluate against the source fixture. When compareToSourceId is defined, either compareToSourceExpression or compareToSourcePath must be defined, but not both</title>compareToSourceExpression</a> : <a
    id="n2296"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1336,7 +1336,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2305"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.compareToSourcePath"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.compareToSourcePath"><title
    id="title158306">XPath or JSONPath expression to evaluate against the source fixture. When compareToSourceId is defined, either compareToSourceExpression or compareToSourcePath must be defined, but not both</title>compareToSourcePath</a> : <a
    id="n2306"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1351,7 +1351,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2315"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.contentType"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.contentType"><title
    id="title158313">The mime-type contents to compare against the request or response message 'Content-Type' header</title>contentType</a> : <a
    id="n2316"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1369,7 +1369,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2329"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.defaultManualCompletion"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.defaultManualCompletion"><title
    id="title158322">The default manual completion outcome applied to this assertion</title>defaultManualCompletion</a> : <a
    id="n2330"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1391,7 +1391,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2343"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.expression"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.expression"><title
    id="title158331">The FHIRPath expression to be evaluated against the request or response message contents - HTTP headers and payload</title>expression</a> : <a
    id="n2344"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1406,7 +1406,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2353"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.headerField"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.headerField"><title
    id="title158338">The HTTP header field name e.g. 'Location'</title>headerField</a> : <a
    id="n2354"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1421,7 +1421,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2363"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.minimumId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.minimumId"><title
    id="title158345">The ID of a fixture. Asserts that the response contains at a minimum the fixture specified by minimumId</title>minimumId</a> : <a
    id="n2364"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1436,7 +1436,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2373"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.navigationLinks"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.navigationLinks"><title
    id="title158352">Whether or not the test execution performs validation on the bundle navigation links</title>navigationLinks</a> : <a
    id="n2374"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1] « <a
@@ -1451,7 +1451,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2383"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.operator"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.operator"><title
    id="title158359">The operator type defines the conditional behavior of the assert</title>operator</a> : <a
    id="n2384"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1465,7 +1465,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2393"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.path"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.path"><title
    id="title158366">The XPath or JSONPath expression to be evaluated against the fixture representing the response received from server</title>path</a> : <a
    id="n2394"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1480,7 +1480,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2403"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.requestMethod"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.requestMethod"><title
    id="title158373">The request method or HTTP operation code to compare against that used by the client system under test</title>requestMethod</a> : <a
    id="n2404"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1498,7 +1498,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2417"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.requestURL"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.requestURL"><title
    id="title158382">The value to use in a comparison against the request URL path string</title>requestURL</a> : <a
    id="n2418"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1509,7 +1509,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2423"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.resource"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.resource"><title
    id="title158387">The type of the resource.  See the [resource list](resourcelist.html)</title>resource</a> : <a
    id="n2424"
    xlink:href="datatypes.html#uri">uri</a> [0..1] « <a
@@ -1527,7 +1527,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2437"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.response"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.response"><title
    id="title158396">continue | switchingProtocols | okay | created | accepted | nonAuthoritativeInformation | noContent | resetContent | partialContent | multipleChoices | movedPermanently | found | seeOther | notModified | useProxy | temporaryRedirect | permanentRedirect | badRequest | unauthorized | paymentRequired | forbidden | notFound | methodNotAllowed | notAcceptable | proxyAuthenticationRequired | requestTimeout | conflict | gone | lengthRequired | preconditionFailed | contentTooLarge | uriTooLong | unsupportedMediaType | rangeNotSatisfiable | expectationFailed | misdirectedRequest | unprocessableContent | upgradeRequired | internalServerError | notImplemented | badGateway | serviceUnavailable | gatewayTimeout | httpVersionNotSupported</title>response</a> : <a
    id="n2438"
    xlink:href="datatypes.html#code">code</a> [0..1] « <a
@@ -1545,7 +1545,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2451"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.responseCode"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.responseCode"><title
    id="title158405">The value of the HTTP response code to be tested</title>responseCode</a> : <a
    id="n2452"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -1560,7 +1560,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2461"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.sourceId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.sourceId"><title
    id="title158412">Fixture to evaluate the XPath/JSONPath expression or the headerField  against</title>sourceId</a> : <a
    id="n2462"
    xlink:href="datatypes.html#id">id</a> [0..1]</text>
@@ -1571,7 +1571,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2467"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.stopTestOnFail"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.stopTestOnFail"><title
    id="title158417">Whether or not the current test execution will stop on failure for this assert</title>stopTestOnFail</a> : <a
    id="n2468"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1]</text>
@@ -1582,7 +1582,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2473"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.validateProfileId"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.validateProfileId"><title
    id="title158422">The ID of the Profile to validate against</title>validateProfileId</a> : <a
    id="n2474"
    xlink:href="datatypes.html#id">id</a> [0..1] « <a
@@ -1597,7 +1597,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2483"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.value"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.value"><title
    id="title158429">The value to compare to</title>value</a> : <a
    id="n2484"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1608,7 +1608,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2489"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.warningOnly"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.warningOnly"><title
    id="title158434">Whether or not the test execution will produce a warning only on error for this assert</title>warningOnly</a> : <a
    id="n2490"
    xlink:href="datatypes.html#boolean">boolean</a> [1..1]</text>
@@ -1645,7 +1645,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2498"
-   xlink:href="testscript-definitions.html#TestScript.setup.action.assert.requirement.link_x_"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.requirement.link_x_"><title
    id="title158443">Link or reference providing traceability to the testing requirement for this test</title>link[x]</a> : <a
    id="n2499"
    xlink:href="types.html#PrimitiveType">PrimitiveType</a> [0..1] « <a
@@ -1688,7 +1688,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2513"
-   xlink:href="testscript-definitions.html#TestScript.test.name"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.test.name"><title
    id="title158455">The name of this test used for tracking/logging purposes by test engines</title>name</a> : <a
    id="n2514"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1699,7 +1699,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2519"
-   xlink:href="testscript-definitions.html#TestScript.test.description"><title
+   xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.test.description"><title
    id="title158460">A short description of the test used by test engines for tracking and reporting purposes</title>description</a> : <a
    id="n2520"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1808,7 +1808,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2537"
-       xlink:href="testscript-definitions.html#TestScript.origin"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.origin"><title
    id="title158481">An abstract server used in operations within this test script in the origin element</title>origin</a></text>
   <text
      id="n2538"
@@ -1842,7 +1842,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2543"
-       xlink:href="testscript-definitions.html#TestScript.destination"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.destination"><title
    id="title158489">An abstract server used in operations within this test script in the destination element</title>destination</a></text>
   <text
      id="n2544"
@@ -1876,7 +1876,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2549"
-       xlink:href="testscript-definitions.html#TestScript.metadata.link"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.link"><title
    id="title158497">A link to the FHIR specification that this test is covering</title>link</a></text>
   <text
      id="n2550"
@@ -1910,7 +1910,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2555"
-       xlink:href="testscript-definitions.html#TestScript.metadata.capability"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata.capability"><title
    id="title158505">Capabilities that must exist and are assumed to function correctly on the FHIR server being tested</title>capability</a></text>
   <text
      id="n2556"
@@ -1944,7 +1944,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2561"
-       xlink:href="testscript-definitions.html#TestScript.metadata"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.metadata"><title
    id="title158513">The required capability must exist and are assumed to function correctly on the FHIR server being tested</title>metadata</a></text>
   <text
      id="n2562"
@@ -1978,7 +1978,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2567"
-       xlink:href="testscript-definitions.html#TestScript.scope"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.scope"><title
    id="title158521">The scope indicates a conformance artifact that is tested by the test(s) within this test case and the expectation of the test outcome(s) as well as the intended test phase inclusion</title>scope</a></text>
   <text
      id="n2568"
@@ -2012,7 +2012,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2573"
-       xlink:href="testscript-definitions.html#TestScript.fixture"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.fixture"><title
    id="title158529">Fixture in the test script - by reference (uri). All fixtures are required for the test script to execute</title>fixture</a></text>
   <text
      id="n2574"
@@ -2046,7 +2046,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2579"
-       xlink:href="testscript-definitions.html#TestScript.variable"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.variable"><title
    id="title158537">Variable is set based either on element value in response body or on header field value in the response headers</title>variable</a></text>
   <text
      id="n2580"
@@ -2080,7 +2080,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2585"
-       xlink:href="testscript-definitions.html#TestScript.setup.action.operation.requestHeader"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.requestHeader"><title
    id="title158545">Header elements would be used to set HTTP headers</title>requestHeader</a></text>
   <text
      id="n2586"
@@ -2114,7 +2114,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2591"
-       xlink:href="testscript-definitions.html#TestScript.setup.action.operation"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation"><title
    id="title158553">The operation to perform</title>operation</a></text>
   <text
      id="n2592"
@@ -2148,7 +2148,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2597"
-       xlink:href="testscript-definitions.html#TestScript.setup.action.assert.requirement"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.requirement"><title
    id="title158561">Links or references providing traceability to the testing requirements for this assert</title>requirement</a></text>
   <text
      id="n2598"
@@ -2182,7 +2182,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2603"
-       xlink:href="testscript-definitions.html#TestScript.setup.action.assert"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert"><title
    id="title158569">Evaluates the results of previous operations to determine if the server under test behaves appropriately</title>assert</a></text>
   <text
      id="n2604"
@@ -2216,7 +2216,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2609"
-       xlink:href="testscript-definitions.html#TestScript.setup.action"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action"><title
    id="title158577">Action would contain either an operation or an assertion</title>action</a></text>
   <text
      id="n2610"
@@ -2250,7 +2250,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2615"
-       xlink:href="testscript-definitions.html#TestScript.setup"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.setup"><title
    id="title158585">A series of required setup operations before tests are executed</title>setup</a></text>
   <text
      id="n2616"
@@ -2284,7 +2284,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2621"
-       xlink:href="testscript-definitions.html#TestScript.test.action.operation"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.test.action.operation"><title
    id="title158593">An operation would involve a REST request to a server</title>operation</a></text>
   <text
      id="n2622"
@@ -2318,7 +2318,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2627"
-       xlink:href="testscript-definitions.html#TestScript.test.action.assert"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.test.action.assert"><title
    id="title158601">Evaluates the results of previous operations to determine if the server under test behaves appropriately</title>assert</a></text>
   <text
      id="n2628"
@@ -2352,7 +2352,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2633"
-       xlink:href="testscript-definitions.html#TestScript.test.action"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.test.action"><title
    id="title158609">Action would contain either an operation or an assertion</title>action</a></text>
   <text
      id="n2634"
@@ -2386,7 +2386,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2639"
-       xlink:href="testscript-definitions.html#TestScript.test"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.test"><title
    id="title158617">A test in this script</title>test</a></text>
   <text
      id="n2640"
@@ -2420,7 +2420,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2645"
-       xlink:href="testscript-definitions.html#TestScript.teardown.action.operation"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.teardown.action.operation"><title
    id="title158625">An operation would involve a REST request to a server</title>operation</a></text>
   <text
      id="n2646"
@@ -2454,7 +2454,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2651"
-       xlink:href="testscript-definitions.html#TestScript.teardown.action"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.teardown.action"><title
    id="title158633">The teardown action will only contain an operation</title>action</a></text>
   <text
      id="n2652"
@@ -2488,7 +2488,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2657"
-       xlink:href="testscript-definitions.html#TestScript.teardown"><title
+       xlink:href="StructureDefinition-TestScript-definitions.html#TestScript.teardown"><title
    id="title158641">A series of operations required to clean up after all the tests are executed (successfully or otherwise)</title>teardown</a></text>
   <text
      id="n2658"
