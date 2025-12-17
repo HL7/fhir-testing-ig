@@ -8,6 +8,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="4"/>
+  </extension>
   <url value="http://hl7.org/fhir/ValueSet/testscript-operation-codes"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -23,7 +29,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.2.357"/>
   </identifier>
-  <version value="6.0.0"/>
+  <version value="0.1.0-SNAPSHOT"/>
   <name value="TestScriptOperationCodeValueSet"/>
   <title value="Test Script Operation Code Value Set"/>
   <status value="draft"/>

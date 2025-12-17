@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TestPlan xmlns="http://hl7.org/fhir">
+<TestPlan xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT">
   <id value="tx-example"/>
   <url value="http://hl7.org/fhir/TestPlan/tx-example"/>
   <title value="Terminology Ecosystem Test Plan"/>
@@ -7,9 +7,12 @@
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <description value="This is a subset of the full [terminology ecosystem tests](https://github.com/HL7/fhir-tx-ecosystem-ig/tree/main/tests)"/>
   <scope>
-    <reference value="http://hl7.org/fhir/uv/tx-ecosystem/ImplementationGuide/hl7.fhir.uv.tx-ecosystem"/>
+    <reference value="http://hl7.org/fhir/StructureDefinition/CodeSystem"/>
   </scope>
-  <runner value="https://github.com/hapifhir/org.hl7.fhir.core/blob/master/documentation/tx-runner.md"/>
+  <scope>
+    <reference value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
+  </scope>
+  <runner value="https://example.org/hapifhir/org.hl7.fhir.core/blob/master/documentation/tx-runner.md"/>
   <mode>
     <code value="general"/>
     <description value="The tests a general purpose terminology server has to pass, but not codesystem specific terminology servers"/>

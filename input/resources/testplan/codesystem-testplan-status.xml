@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><CodeSystem xmlns="http://hl7.org/fhir">
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
   <id value="testplan-status"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="oo"/>
+    <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
   <url value="http://hl7.org/fhir/testplan-status"/>
-  <version value="6.0.0"/>
+  <version value="0.1.0-SNAPSHOT"/>
   <name value="TestPlanStatus"/>
   <title value="Test Plan Status"/>
   <status value="draft"/>
@@ -32,7 +33,7 @@
   </contact>
   <description value="The status of the TestPlan."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-status"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-status|0.1.0-SNAPSHOT"/>
   <content value="complete"/>
   <concept>
     <code value="draft"/>

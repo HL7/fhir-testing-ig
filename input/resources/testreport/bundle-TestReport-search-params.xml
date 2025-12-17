@@ -7,7 +7,7 @@
       <SearchParameter>
         <id value="TestReport-identifier"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-identifier"/>
         <description value="An external identifier for the test report"/>
@@ -23,7 +23,7 @@
       <SearchParameter>
         <id value="TestReport-issued"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-issued"/>
         <description value="The test report generation date"/>
@@ -39,7 +39,7 @@
       <SearchParameter>
         <id value="TestReport-participant"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-participant"/>
         <description value="The reference to a participant in the test execution"/>
@@ -55,7 +55,7 @@
       <SearchParameter>
         <id value="TestReport-result"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-result"/>
         <description value="The result disposition of the test execution"/>
@@ -71,7 +71,7 @@
       <SearchParameter>
         <id value="TestReport-status"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-status"/>
         <name value="status"/>
@@ -88,7 +88,7 @@
       <SearchParameter>
         <id value="TestReport-tester"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-tester"/>
         <description value="The name of the testing organization"/>
@@ -104,7 +104,7 @@
       <SearchParameter>
         <id value="TestReport-testscript"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
         <url value="http://hl7.org/fhir/SearchParameter/TestReport-testscript"/>
         <description value="The test script executed to produce this report"/>

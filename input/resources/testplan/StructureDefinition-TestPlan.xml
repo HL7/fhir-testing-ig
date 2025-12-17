@@ -4,6 +4,9 @@
 	<meta>
 		<lastUpdated value="2021-01-02T08:58:31.578+11:00"/>
 	</meta>
+	<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-resource">
+		<valueBoolean value="true"/>
+	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
 		<valueString value="Clinical.Request &amp;amp; Response"/>
 	</extension>
@@ -22,16 +25,16 @@
 	<extension url="http://hl7.org/fhir/tools/StructureDefinition/entered-in-error-status">
 		<valueString value=".status = entered-in-error"/>
 	</extension>
-  <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-resource-reference">
-    <extension url="path">
-      <valueString value="PlanDefinition.action.definitionCanonical"/>
-    </extension>
-    <extension url="documentation">
-      <valueMarkdown value="This isn't actually a valid location - added for testing purposes. But maybe PlanDefinition should reference a TestPlan?"/>
-    </extension>
-  </extension>
+	<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-resource-reference">
+		<extension url="path">
+			<valueString value="PlanDefinition.action.definitionCanonical"/>
+		</extension>
+		<extension url="documentation">
+			<valueMarkdown value="This isn't actually a valid location - added for testing purposes. But maybe PlanDefinition should reference a TestPlan?"/>
+		</extension>
+	</extension>
 	<url value="http://hl7.org/fhir/StructureDefinition/TestPlan"/>
-	<version value="6.0.0"/>
+	<version value="0.1.0-SNAPSHOT"/>
 	<name value="TestPlan"/>
 	<title value="Test Plan"/>
 	<status value="draft"/>
@@ -88,7 +91,7 @@
 				<severity value="warning"/>
 				<human value="Name should be usable as an identifier for the module by machine processing applications such as code generation"/>
 				<expression value="name.exists() implies name.matches('^[A-Z]([A-Za-z0-9_]){1,254}$')"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestPlan"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT"/>
 			</constraint>
 			<mapping>
 				<identity value="w5"/>
@@ -164,7 +167,7 @@
 				<map value="FiveWs.version"/>
 			</mapping>
 		</element>
-				<element id="TestPlan.versionAlgorithm[x]">
+		<element id="TestPlan.versionAlgorithm[x]">
 			<path value="TestPlan.versionAlgorithm[x]"/>
 			<short value="How to compare versions"/>
 			<definition value="Indicates the mechanism used to compare versions to determine which is more current."/>
@@ -517,7 +520,7 @@
       <max value="1"/>
       <type>
         <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT"/>
       </type>
     </element>
     <element id="TestPlan.dependency.description">
@@ -930,9 +933,8 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT"/>
       </type>
     </element>
-				
 	</differential>
 </StructureDefinition>

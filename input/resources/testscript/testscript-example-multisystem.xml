@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<TestScript xmlns="http://hl7.org/fhir">
+<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT">
   <id value="testscript-example-multisystem"/>
   <url value="http://hl7.org/fhir/TestScript/testscript-example-multisystem"/>
   <identifier>
@@ -11,9 +10,9 @@
   <name value="TestScriptExampleMultiSystem"/>
   <title value="Multisystem Test Script"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2017-01-18"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <name value="Support"/>
     <telecom>
@@ -23,13 +22,6 @@
     </telecom>
   </contact>
   <description value="TestScript example resource showing use of origin and destination for multisystem support. The single origin will execute a Patient read against the two destination systems using user defined dynamic variables. The test engine will wait at each operation action with a defined origin and destination for the origin test system to send the expected FHIR operation to the destination test system. Once the expected request and response is observed, the test engine will continue with the test execution."/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
-      <display value="United States of America"/>
-    </coding>
-  </jurisdiction>
   <purpose value="Patient Read Operation"/>
   <copyright value="© HL7.org 2011+"/>
   <testSystem>
@@ -38,20 +30,14 @@
     <description value="The FHIR Client system under test."/>
   </testSystem>
   <testSystem>
-    <index value="1"/>
+    <index value="2"/>
     <title value="FHIR Server"/>
     <description value="The FHIR Server system under test."/>
     <url value="http://acme.com/fhir/test"/>
   </testSystem>
-  <destination>
-    <index value="2"/>
-    <profile>
-      <code value="FHIR-Server"/>
-    </profile>
-  </destination>
   <metadata>
     <link>
-      <url value="http://hl7.org/fhir/patient.html"/>
+      <url value="http://example.org/fhir/patient.html"/>
       <description value="Demographics and other administrative information about an individual or animal receiving care or other health-related services."/>
     </link>
     <capability>
@@ -59,9 +45,9 @@
       <validated value="false"/>
       <description value="Patient Read Operation"/>
       <origin value="1"/>
-      <destination value="1"/>
-      <link value="http://hl7.org/fhir/http.html#read"/>
-      <capabilities value="http://hl7.org/fhir/CapabilityStatement/example"/>
+      <destination value="2"/>
+      <link value="http://example.org/fhir/http.html#read"/>
+      <capabilities value="http://example.org/fhir/CapabilityStatement/example"/>
     </capability>
     <capability>
       <required value="true"/>
@@ -69,8 +55,8 @@
       <description value="Patient Read Operation"/>
       <origin value="1"/>
       <destination value="2"/>
-      <link value="http://hl7.org/fhir/http.html#read"/>
-      <capabilities value="http://hl7.org/fhir/CapabilityStatement/example"/>
+      <link value="http://example.org/fhir/http.html#read"/>
+      <capabilities value="http://example.org/fhir/CapabilityStatement/example"/>
     </capability>
   </metadata>
   <variable>

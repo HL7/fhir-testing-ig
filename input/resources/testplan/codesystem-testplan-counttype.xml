@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><CodeSystem xmlns="http://hl7.org/fhir">
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
   <id value="testplan-counttype"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="oo"/>
+    <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
@@ -17,7 +18,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.4.1926"/>
   </identifier>
-  <version value="6.0.0"/>
+  <version value="0.1.0-SNAPSHOT"/>
   <name value="InventoryCountType"/>
   <title value="Inventory Count Type"/>
   <status value="draft"/>
@@ -36,7 +37,7 @@
   </contact>
   <description value="The type of count."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-counttype"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-counttype|0.1.0-SNAPSHOT"/>
   <content value="complete"/>
   <concept>
     <code value="snapshot"/>

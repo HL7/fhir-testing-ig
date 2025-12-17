@@ -9,17 +9,17 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="4"/>
   </extension>
   <url value="http://hl7.org/fhir/ValueSet/assert-manual-completion-codes"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.3.702"/>
   </identifier>
-  <version value="6.0.0"/>
+  <version value="0.1.0-SNAPSHOT"/>
   <name value="AssertionManualCompletionTypeValueSet"/>
   <title value="Assertion Manual Completion Type Value Set"/>
   <status value="draft"/>
@@ -41,6 +41,7 @@
   <compose>
     <include>
       <system value="http://hl7.org/fhir/assert-manual-completion-codes"/>
+      <version value="0.1.0-SNAPSHOT"/>
     </include>
   </compose>
 </ValueSet>

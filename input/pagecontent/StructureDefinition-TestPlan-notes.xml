@@ -1,6 +1,7 @@
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml ../../schema/fhir-xhtml.xsd" xmlns="http://www.w3.org/1999/xhtml">
 
-<h3>Scope of testing</h3>
+<a name="scopeoftesting"> </a>
+<h4>Scope of testing</h4>
 <p>
 The scope element defines what the TestPlan is testing. This serves no functional purpose during the execution
 of the tests, but is used to provide context for the TestPlan and its tests. The scope can be one of the following:
@@ -15,7 +16,7 @@ of the tests, but is used to provide context for the TestPlan and its tests. The
 </ul>
 
 <a name="defining"> </a>
-<h3>Defining the Runner</h3>
+<h4>Defining the Runner</h4>
 <p>
 The runner is identified by a URL that is used to define what is required to execute the tests in the TestPlan.
 In general, the expectation is that the URL will resolve to a text description of the behavior of the runner. 
@@ -39,7 +40,8 @@ part of the formal definition of the runner, and the documentation for the runne
 the different kinds of documentation.
 </p>
 
-<h3>Dependencies</h3>
+<a name="dependencies"> </a>
+<h4>Dependencies</h4>
 <p>
 Test Plans can nominate other Test Plans on which they depend - that is, it is only valid to test this 
 test plan if the other test plans was successfully executed first, which means, every test in that plan 
@@ -48,7 +50,8 @@ test plan nominates, as those referenced test plans are usually (but not always)
 nominate their dependencies.
 </p>
 
-<h3>Inputs and Outputs</h3>
+<a name="inputsandoutputs"> </a>
+<h4>Inputs and Outputs</h4>
 <p>
 Suites and Tests can define inputs and expected outputs. Inputs are used to provide data to the tests, and 
 expected outputs are used to specify rules against which the actual outputs of the tests are checked.
@@ -79,7 +82,8 @@ has the following properties:
 	<li><b>expression</b> - The actual expression. The definition of the runner will define what expression languages etc are available, but FHIRPath is strongly recommended</li>
 </ul>
 
-<h3>Modes and Parameters</h3>
+<a name="modesandparameters"> </a>
+<h4>Modes and Parameters</h4>
 <p>
 There is two kind of inputs to a test plan when it is executed: modes and parameters. 
 They function differently:
@@ -131,7 +135,8 @@ correct instance will be selected transparently to the script. If the input or o
 there is no ability to use the FHIRPath expression, but most inputs and expected outputs are resources. 
 </p>
 
-<h3>Test Reports</h3>
+<a name="testreports"> </a>
+<h4>Test Reports</h4>
 
 <p>
 The outcomes of a TestPlan execution MAY be reported using the <a href="StructureDefinition-TestReport.html">TestReport</a> resource,

@@ -7,9 +7,9 @@
       <SearchParameter>
         <id value="TestScript-artifact"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-artifact"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-artifact|0.1.0-SNAPSHOT"/>
         <description value="The artifact under test"/>
         <code value="artifact"/>
         <type value="reference"/>
@@ -23,9 +23,9 @@
       <SearchParameter>
         <id value="TestScript-conformance"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-conformance"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-conformance|0.1.0-SNAPSHOT"/>
         <description value="The artifact conformance testing expectation"/>
         <code value="conformance"/>
         <type value="token"/>
@@ -39,9 +39,9 @@
       <SearchParameter>
         <id value="TestScript-context"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context|0.1.0-SNAPSHOT"/>
         <description value="A use context assigned to the test script"/>
         <code value="context"/>
         <type value="token"/>
@@ -55,9 +55,9 @@
       <SearchParameter>
         <id value="TestScript-context-quantity"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-quantity"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-quantity|0.1.0-SNAPSHOT"/>
         <description value="A quantity- or range-valued use context assigned to the test script"/>
         <code value="context-quantity"/>
         <type value="quantity"/>
@@ -71,9 +71,9 @@
       <SearchParameter>
         <id value="TestScript-context-type"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-type"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-type|0.1.0-SNAPSHOT"/>
         <description value="A type of use context assigned to the test script"/>
         <code value="context-type"/>
         <type value="token"/>
@@ -87,20 +87,20 @@
       <SearchParameter>
         <id value="TestScript-context-type-quantity"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-type-quantity"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-type-quantity|0.1.0-SNAPSHOT"/>
         <description value="A use context type and quantity- or range-based value assigned to the test script"/>
         <code value="context-type-quantity"/>
         <type value="composite"/>
         <expression value="TestScript.useContext"/>
         <processingMode value="normal"/>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter//TestScript-context-type"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context-type|0.1.0-SNAPSHOT"/>
           <expression value="code"/>
         </component>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context-quantity"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context-quantity|0.1.0-SNAPSHOT"/>
           <expression value="value.ofType(Quantity) | value.ofType(Range)"/>
         </component>
       </SearchParameter>
@@ -111,20 +111,20 @@
       <SearchParameter>
         <id value="TestScript-context-type-value"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-type-value"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-context-type-value|0.1.0-SNAPSHOT"/>
         <description value="A use context type and value assigned to the test script"/>
         <code value="context-type-value"/>
         <type value="composite"/>
         <expression value="TestScript.useContext"/>
         <processingMode value="normal"/>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context-type"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context-type|0.1.0-SNAPSHOT"/>
           <expression value="code"/>
         </component>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-context|0.1.0-SNAPSHOT"/>
           <expression value="value.ofType(CodeableConcept)"/>
         </component>
       </SearchParameter>
@@ -135,9 +135,9 @@
       <SearchParameter>
         <id value="TestScript-date"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-date"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-date|0.1.0-SNAPSHOT"/>
         <description value="The test script publication date"/>
         <code value="date"/>
         <type value="date"/>
@@ -151,9 +151,9 @@
       <SearchParameter>
         <id value="TestScript-description"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-description"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-description|0.1.0-SNAPSHOT"/>
         <description value="The description of the test script"/>
         <code value="description"/>
         <type value="string"/>
@@ -167,9 +167,9 @@
       <SearchParameter>
         <id value="TestScript-identifier"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-identifier"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-identifier|0.1.0-SNAPSHOT"/>
         <description value="External identifier for the test script"/>
         <code value="identifier"/>
         <type value="token"/>
@@ -183,9 +183,9 @@
       <SearchParameter>
         <id value="TestScript-jurisdiction"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-jurisdiction"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-jurisdiction|0.1.0-SNAPSHOT"/>
         <description value="Intended jurisdiction for the test script"/>
         <code value="jurisdiction"/>
         <type value="token"/>
@@ -199,9 +199,9 @@
       <SearchParameter>
         <id value="TestScript-name"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-name"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-name|0.1.0-SNAPSHOT"/>
         <description value="Computationally friendly name of the test script"/>
         <code value="name"/>
         <type value="string"/>
@@ -215,9 +215,9 @@
       <SearchParameter>
         <id value="TestScript-phase"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-phase"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-phase|0.1.0-SNAPSHOT"/>
         <description value="The artifact phase of testing"/>
         <code value="phase"/>
         <type value="token"/>
@@ -231,9 +231,9 @@
       <SearchParameter>
         <id value="TestScript-publisher"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-publisher"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-publisher|0.1.0-SNAPSHOT"/>
         <description value="Name of the publisher of the test script"/>
         <code value="publisher"/>
         <type value="string"/>
@@ -247,20 +247,20 @@
       <SearchParameter>
         <id value="TestScript-scope-artifact-conformance"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-artifact-conformance"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-artifact-conformance|0.1.0-SNAPSHOT"/>
         <description value="The artifact under test and conformance testing expectation"/>
         <code value="scope-artifact-conformance"/>
         <type value="composite"/>
         <expression value="TestScript.scope"/>
         <processingMode value="normal"/>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-artifact"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-artifact|0.1.0-SNAPSHOT"/>
           <expression value="artifact"/>
         </component>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-conformance"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-conformance|0.1.0-SNAPSHOT"/>
           <expression value="conformance.ofType(CodeableConcept)"/>
         </component>
       </SearchParameter>
@@ -271,20 +271,20 @@
       <SearchParameter>
         <id value="TestScript-scope-artifact-phase"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-artifact-phase"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-scope-artifact-phase|0.1.0-SNAPSHOT"/>
         <description value="The artifact under test and phase of testing"/>
         <code value="scope-artifact-phase"/>
         <type value="composite"/>
         <expression value="TestScript.scope"/>
         <processingMode value="normal"/>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-artifact"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-artifact|0.1.0-SNAPSHOT"/>
           <expression value="artifact"/>
         </component>
         <component>
-          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-phase"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/TestScript-phase|0.1.0-SNAPSHOT"/>
           <expression value="phase.ofType(CodeableConcept)"/>
         </component>
       </SearchParameter>
@@ -295,9 +295,9 @@
       <SearchParameter>
         <id value="TestScript-status"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-status"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-status|0.1.0-SNAPSHOT"/>
         <description value="The current status of the test script"/>
         <code value="status"/>
         <type value="token"/>
@@ -311,9 +311,9 @@
       <SearchParameter>
         <id value="TestScript-testscript-capability"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-testscript-capability"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-testscript-capability|0.1.0-SNAPSHOT"/>
         <description value="TestScript required and validated capability"/>
         <code value="testscript-capability"/>
         <type value="string"/>
@@ -327,9 +327,9 @@
       <SearchParameter>
         <id value="TestScript-title"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-title"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-title|0.1.0-SNAPSHOT"/>
         <description value="The human-friendly name of the test script"/>
         <code value="title"/>
         <type value="string"/>
@@ -343,9 +343,9 @@
       <SearchParameter>
         <id value="TestScript-url"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-url"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-url|0.1.0-SNAPSHOT"/>
         <description value="The uri that identifies the test script"/>
         <code value="url"/>
         <type value="uri"/>
@@ -359,9 +359,9 @@
       <SearchParameter>
         <id value="TestScript-version"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
+          <valueCode value="draft"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/TestScript-version"/>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-version|0.1.0-SNAPSHOT"/>
         <description value="The business version of the test script"/>
         <code value="version"/>
         <type value="token"/>
@@ -374,16 +374,15 @@
     <resource>
       <SearchParameter>
         <id value="TestScript-experimental"/>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="TestScript.experimental"/>
-        </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="normative"/>
+          <valueCode value="draft"/>
         </extension>
+        <url value="http://hl7.org/fhir/SearchParameter/TestScript-experimental|0.1.0-SNAPSHOT"/>
         <description value="Whether the TestScript is experimental"/>
         <code value="experimental"/>
         <type value="token"/>
         <expression value="TestScript.experimental"/>
+        <processingMode value="normal"/>
       </SearchParameter>
     </resource>
   </entry>

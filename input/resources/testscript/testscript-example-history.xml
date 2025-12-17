@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<TestScript xmlns="http://hl7.org/fhir">
+<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT">
   <id value="testscript-example-history"/>
   <url value="http://hl7.org/fhir/TestScript/testscript-example-history"/>
   <identifier>
@@ -11,9 +10,9 @@
   <name value="TestScriptExampleHistory"/>
   <title value="TestScript Example History"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2017-01-18"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <name value="Support"/>
     <telecom>
@@ -23,30 +22,8 @@
     </telecom>
   </contact>
   <description value="TestScript example resource with setup to delete if present and create a new instance of a Patient then update that Patient to create a minimum history; and single test definition to get the history of that Patient with various asserts."/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
-      <display value="United States of America"/>
-    </coding>
-  </jurisdiction>
   <purpose value="Patient (Conditional) Create, Update, Delete and History (Instance) Operations"/>
   <copyright value="© HL7.org 2011+"/>
-  <metadata>
-    <link>
-      <url value="http://hl7.org/fhir/patient.html"/>
-      <description value="Demographics and other administrative information about an individual or animal receiving care or other health-related services."/>
-    </link>
-    <capability>
-      <required value="true"/>
-      <validated value="false"/>
-      <description value="Patient Update, Delete and History (Instance) Operations"/>
-      <link value="http://hl7.org/fhir/http.html#update"/>
-      <link value="http://hl7.org/fhir/http.html#delete"/>
-      <link value="http://hl7.org/fhir/http.html#history"/>
-      <capabilities value="http://hl7.org/fhir/CapabilityStatement/example"/>
-    </capability>
-  </metadata>
   <fixture id="fixture-patient-create">
     <autocreate value="false"/>
     <autodelete value="false"/>

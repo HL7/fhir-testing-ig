@@ -3,7 +3,7 @@
 	<id value="example"/>
 	<url value="http://hl7.org/fhir/TestPlan/example"/>
 	<identifier>
-		<system value="urn:oid:0.1.2.3.4.5.6.7"/>
+		<system value="http://example.org/identifiers"/>
 		<value value="1234"/>
 	</identifier>
 	<title value="Example Test Plan"/>
