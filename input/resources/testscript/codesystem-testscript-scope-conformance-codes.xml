@@ -9,10 +9,10 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
+    <valueInteger value="4"/>
   </extension>
   <url value="http://hl7.org/fhir/testscript-scope-conformance-codes"/>
   <identifier>
@@ -38,7 +38,7 @@
   </contact>
   <description value="The expectation of whether the test must pass for the system to be considered conformant with the artifact."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/testscript-scope-conformance-codes"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/testscript-scope-conformance-codes|0.1.0-SNAPSHOT"/>
   <content value="complete"/>
   <concept>
     <code value="required"/>

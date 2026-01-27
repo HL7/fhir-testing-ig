@@ -9,10 +9,10 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="4"/>
   </extension>
   <url value="http://hl7.org/fhir/assert-direction-codes"/>
   <identifier>
@@ -48,7 +48,7 @@
   </contact>
   <description value="The type of direction to use for assertion."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/assert-direction-codes"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/assert-direction-codes|0.1.0-SNAPSHOT"/>
   <content value="complete"/>
   <concept>
     <code value="response"/>

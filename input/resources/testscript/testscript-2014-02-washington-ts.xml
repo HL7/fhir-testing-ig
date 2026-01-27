@@ -1,70 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<TestScript xmlns="http://hl7.org/fhir">
+<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT">
   <id value="2014-02-washington-ts"/>
   <url value="http://hl7.org/fhir/TestScript/2014-02-washington-ts"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.12.7"/>
   </identifier>
+  <version value="1.0"/>
   <name value="TerminologyConnectathon1TestScript"/>
   <title value="Terminology Connectathon #1 Test Script"/>
   <status value="draft"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <description value="This is the test script the 1st Terminology Services Connectathon"/>
-  <fixture id="extensional-case-1"/>
-  <fixture id="extensional-case-2"/>
-  <fixture id="extensional-case-3"/>
-  <fixture id="extensional-case-4"/>
-  <fixture id="intensional-case-1"/>
-  <fixture id="intensional-case-2"/>
-  <fixture id="intensional-case-3"/>
-  <fixture id="test1-1-min"/>
-  <fixture id="test1-2-min"/>
-  <fixture id="test1-3-min"/>
-  <fixture id="test1-5-min"/>
-  <fixture id="test1-6-min"/>
-  <fixture id="test2-1-min"/>
-  <fixture id="test2-2-min"/>
-  <fixture id="test2-3-min"/>
-  <fixture id="test2-4-min"/>
-  <fixture id="test2-5-min"/>
-  <fixture id="test2-6-min"/>
-  <fixture id="test2-7-min"/>
-  <fixture id="test3-1-a-min"/>
-  <fixture id="test3-1-b-min"/>
-  <fixture id="test3-1-c-min"/>
-  <fixture id="test3-2-a-min"/>
-  <fixture id="test3-2-b-min"/>
-  <fixture id="test3-2-c-min"/>
-  <fixture id="test3-2-d-min"/>
-  <fixture id="test3-2-e-min"/>
-  <fixture id="test3-3-a-min"/>
-  <fixture id="test3-3-b-min"/>
-  <fixture id="test3-3-c-min"/>
-  <fixture id="test3-3-d-min"/>
-  <fixture id="test3-3-e-min"/>
-  <fixture id="test3-4-a-min"/>
-  <fixture id="test3-4-b-min"/>
-  <fixture id="test3-4-c-min"/>
-  <fixture id="test3-4-d-min"/>
-  <fixture id="test3-4-e-min"/>
-  <fixture id="test3-5-a-min"/>
-  <fixture id="test3-5-b-min"/>
-  <fixture id="test3-5-c-min"/>
-  <fixture id="test3-5-d-min"/>
-  <fixture id="test3-5-e-min"/>
-  <fixture id="test3-6-a-min"/>
-  <fixture id="test3-6-b-min"/>
-  <fixture id="test3-6-c-min"/>
-  <fixture id="test3-6-d-min"/>
-  <fixture id="test3-6-e-min"/>
-  <fixture id="test3-7-a-min"/>
-  <fixture id="test3-7-b-min"/>
-  <fixture id="test3-7-c-min"/>
-  <fixture id="test3-7-d-min"/>
-  <fixture id="test3-7-e-min"/>
-  <fixture id="test4-1-a-min"/>
-  <fixture id="test4-1-b-min"/>
+  <fixture id="extensional-case-1">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="extensional-case-2">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="extensional-case-3">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="extensional-case-4">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="intensional-case-1">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="intensional-case-2">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="intensional-case-3">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test1-1-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test1-2-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test1-3-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test1-5-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test1-6-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-1-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-2-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-3-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-4-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-5-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-6-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test2-7-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-1-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-1-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-1-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-2-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-2-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-2-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-2-d-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-2-e-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-3-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-3-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-3-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-3-d-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-3-e-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-4-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-4-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-4-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-4-d-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-4-e-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-5-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-5-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-5-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-5-d-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-5-e-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-6-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-6-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-6-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-6-d-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-6-e-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-7-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-7-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-7-c-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-7-d-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test3-7-e-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test4-1-a-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
+  <fixture id="test4-1-b-min">
+    <autocreate value="false"/>
+    <autodelete value="false"/>
+  </fixture>
   <test id="test1-1">
     <name value="Fixed expansion #1"/>
     <description value="Expanding a fixed limited value set, case #1"/>

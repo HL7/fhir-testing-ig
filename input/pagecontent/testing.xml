@@ -103,7 +103,7 @@ systems adhere to the specification.
 <h5 id="workflow">Workflow</h5>
 <p><b>Pre-Processing</b></p>
 <p>
-  The TestScript execution workflow begins by determining if the test suite is appropriate for the system under test. This is determined by evaluating if the interactions defined in the TestScript setup and test action.operation sections are supported by the <a href="{{site.data.fhir.path}}capabilitystatement.html">CapabilityStatement</a> of the system under test. The test engine SHOULD provide a comparison of the system under test capabilities against the TestScript interactions.
+  The TestScript execution workflow begins by determining if the test suite is appropriate for the system under test. This is determined by evaluating if the interactions defined in the TestScript setup and test action.operation sections are supported by the <a href="{{site.data.fhir.path}}capabilitystatement.html">CapabilityStatement</a> of the system under test. The test engine may provide a comparison of the system under test capabilities against the TestScript interactions.
 </p>
 <p>
   If the server supports the requirements of the TestScript instance, any specified fixtures are loaded or retrieved. If the fixtures are marked as 'autocreate' then they are automatically created on the system(s) under test using 'create' operations. If any of the autocreate operations fail, then the tests in the TestScript are skipped.
@@ -128,7 +128,7 @@ systems adhere to the specification.
 </p>
 <p><b>Post-Processing</b></p>
 <p>
-  After the teardown section is executed, any fixtures that were marked 'autodelete' are removed from the server(s) under test. After this final stage, the execution of the TestScript is complete. The test engine SHALL provide the results of the TestScript execution with a generated <a href="StructureDefinition-TestReport.html">TestReport</a> resource. The test engine MAY also provide the results via additional generated output.
+  After the teardown section is executed, any fixtures that were marked 'autodelete' are removed from the server(s) under test. After this final stage, the execution of the TestScript is complete. The test engine will provide the results of the TestScript execution with a generated <a href="StructureDefinition-TestReport.html">TestReport</a> resource. The test engine MAY also provide the results via additional generated output.
 </p>
 
 <a name="fixtures"></a>
@@ -143,7 +143,7 @@ systems adhere to the specification.
 <a name="profiles"></a>
 <h5 id="profiles">Profiles</h5>
 <p>
-  The profiles section of the TestScript defines a set of FHIR profiles (see <a href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a> resource) that will be used as part of the setup or test sections during TestScript execution. Each profile defines a StructureDefinition instance by URI, and must be identified by an ID. The URI SHALL reference a known FHIR profile corresponding to the FHIR specification version being tested. As with Fixtures, the ID on the profile is considered the "source" identifier of the profile. Operations reference the ID of a profile to uniquely identify the profile instance the operation is using ("validateProfileId").
+  The profiles section of the TestScript defines a set of FHIR profiles (see <a href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a> resource) that will be used as part of the setup or test sections during TestScript execution. Each profile defines a StructureDefinition instance by URI, and must be identified by an ID. The URI will reference a known FHIR profile corresponding to the FHIR specification version being tested. As with Fixtures, the ID on the profile is considered the "source" identifier of the profile. Operations reference the ID of a profile to uniquely identify the profile instance the operation is using ("validateProfileId").
 </p>
 <p>
   See <a href="#profiles">Use Profiles</a> for more information.
@@ -1138,7 +1138,7 @@ GET [base]/_history{?[parameters]&amp;_format=[mime-type]}
 <h5 id="howToUseminimumId">Use minimumId</h5>
 
 <p>As previously stated, test engines will parse the 'body' of the minimumId fixture and verify that each element and its value matches the corresponding element and value in the 'body' of a source fixture. In other words, the source fixture is verified to be a 'superset' of the minimumId fixture. The resource id element in the body will be ignored during comparison. The headers will also be ignored.</p>
-<p>The minimumId fixture can be statically defined or it can be either the <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.requestId">requestId</a> or <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.responseId">responseId</a> from another operation. If <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.sourceId">sourceId</a> is not specified, then test engine SHALL use the response of the last operation. For example:</p>
+<p>The minimumId fixture can be statically defined or it can be either the <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.requestId">requestId</a> or <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.responseId">responseId</a> from another operation. If <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.sourceId">sourceId</a> is not specified, then test engine will use the response of the last operation. For example:</p>
 <div class="xmlCode"><pre validationRule="TestScript.setup">
 &lt;action&gt;
   &lt;assert&gt;
@@ -1148,7 +1148,7 @@ GET [base]/_history{?[parameters]&amp;_format=[mime-type]}
 </pre></div>
 
 <p>
-This is a high-level functional description that does not provide sufficient information regarding the test engine requirements of how the detailed comparison is to be performed. In order to provide more clarity a test engine SHALL provide the following structural comparison behaviors of the minimumId fixture and the fixture being evaluated.
+This is a high-level functional description that does not provide sufficient information regarding the test engine requirements of how the detailed comparison is to be performed. In order to provide more clarity a test engine will provide the following structural comparison behaviors of the minimumId fixture and the fixture being evaluated.
 </p>
 <ul>
   <li><b>Attribute or element ordering</b> - If the comparison encounters an order mismatch of an attribute or element between the minimumId fixture and the fixture being evaluated, this does not result in an error as long as the path to the attribute or element matches.
@@ -1226,7 +1226,7 @@ compare1 fixture:
       </li>
     </ul>
   </li>
-  <li><b>Comparison results</b> - The test engine comparison results SHALL include all inconsistencies between the minimumId fixture and the fixture being evaluated.</li>
+  <li><b>Comparison results</b> - The test engine comparison results will include all inconsistencies between the minimumId fixture and the fixture being evaluated.</li>
   <li><b>Attribute or element present regardless of value</b> - The ability to allow for the existence of an attribute or element regardless of its value is <b>NOT</b> supported with the use of minimumID due to the FHIR data requirement that an attribute or element value must be present.
     <ul>
       <li>For example, this minimumId fixture XML element without a value is invalid:

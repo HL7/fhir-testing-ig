@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><CodeSystem xmlns="http://hl7.org/fhir">
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
   <id value="testplan-assertion-type"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
@@ -7,13 +8,13 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
   <url value="http://hl7.org/fhir/testplan-assertion-type"/>
-  <version value="6.0.0"/>
+  <version value="0.1.0-SNAPSHOT"/>
   <name value="TestPlanAssertionType"/>
   <title value="Test Plan Assertion Type"/>
   <status value="draft"/>
@@ -32,7 +33,7 @@
   </contact>
   <description value="The TestPlan test case assertion type."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-assertion-type"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-assertion-type|0.1.0-SNAPSHOT"/>
   <content value="complete"/>
   <concept>
     <code value="informative"/>
