@@ -474,7 +474,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
     </element>
     <element id="TestPlan.scope.reference">
@@ -509,7 +509,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
     </element>
     <element id="TestPlan.dependency.reference">
@@ -551,7 +551,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
     </element>
     <element id="TestPlan.mode.code">
@@ -586,7 +586,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
     </element>
     <element id="TestPlan.parameter.name">
@@ -654,7 +654,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
     </element>
     <element id="TestPlan.suite.name">
@@ -698,7 +698,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
       <constraint>
         <key value="tp-1"/>
@@ -767,7 +767,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
     </element>
     <element id="TestPlan.suite.test.name">
@@ -848,7 +848,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Base"/>
+        <code value="BackboneElement"/>
       </type>
       <constraint>
         <key value="tp-2"/>
