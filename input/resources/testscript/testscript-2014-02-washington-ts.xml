@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT">
+<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1">
   <id value="2014-02-washington-ts"/>
   <url value="http://hl7.org/fhir/TestScript/2014-02-washington-ts"/>
   <identifier>

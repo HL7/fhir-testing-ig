@@ -14,7 +14,7 @@
     <valueInteger value="0"/>
   </extension>
   <url value="http://hl7.org/fhir/testplan-status"/>
-  <version value="0.1.0-SNAPSHOT"/>
+  <version value="0.1.0-snapshot1"/>
   <name value="TestPlanStatus"/>
   <title value="Test Plan Status"/>
   <status value="draft"/>
@@ -33,7 +33,7 @@
   </contact>
   <description value="The status of the TestPlan."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-status|0.1.0-SNAPSHOT"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/testplan-status|0.1.0-snapshot1"/>
   <content value="complete"/>
   <concept>
     <code value="draft"/>

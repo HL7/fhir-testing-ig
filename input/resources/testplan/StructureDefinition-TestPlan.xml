@@ -8,7 +8,7 @@
 		<valueBoolean value="true"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
-		<valueString value="Clinical.Request &amp;amp; Response"/>
+		<valueString value="Clinical.Request &amp; Response"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
 		<valueCode value="draft"/>
@@ -22,6 +22,9 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
 		<valueCode value="fhir"/>
 	</extension>
+	<extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-tla">
+		<valueString value="tpl"/>
+	</extension>
 	<extension url="http://hl7.org/fhir/tools/StructureDefinition/entered-in-error-status">
 		<valueString value=".status = entered-in-error"/>
 	</extension>
@@ -34,7 +37,7 @@
 		</extension>
 	</extension>
 	<url value="http://hl7.org/fhir/StructureDefinition/TestPlan"/>
-	<version value="0.1.0-SNAPSHOT"/>
+	<version value="0.1.0-snapshot1"/>
 	<name value="TestPlan"/>
 	<title value="Test Plan"/>
 	<status value="draft"/>
@@ -91,7 +94,7 @@
 				<severity value="warning"/>
 				<human value="Name should be usable as an identifier for the module by machine processing applications such as code generation"/>
 				<expression value="name.exists() implies name.matches('^[A-Z]([A-Za-z0-9_]){1,254}$')"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-snapshot1"/>
 			</constraint>
 			<mapping>
 				<identity value="w5"/>
@@ -520,7 +523,7 @@
       <max value="1"/>
       <type>
         <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-snapshot1"/>
       </type>
     </element>
     <element id="TestPlan.dependency.description">
@@ -933,7 +936,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-SNAPSHOT"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/TestPlan|0.1.0-snapshot1"/>
       </type>
     </element>
 	</differential>

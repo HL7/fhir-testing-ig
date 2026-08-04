@@ -44,3 +44,5 @@ _genonce.sh
 translations/
 snowstormx
 /FHIR-testing.xml
+
+Requirements-fromNarrative.json

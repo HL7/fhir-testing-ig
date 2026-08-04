@@ -22,6 +22,9 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
 		<valueCode value="fhir"/>
 	</extension>
+	<extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-tla">
+		<valueString value="tst"/>
+	</extension>
 	<extension url="http://hl7.org/fhir/tools/StructureDefinition/entered-in-error-status">
 		<valueString value=".status = retired"/>
 	</extension>
@@ -30,7 +33,7 @@
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:2.16.840.1.113883.4.642.5.1082"/>
 	</identifier>
-	<version value="0.1.0-SNAPSHOT"/>
+	<version value="0.1.0-snapshot1"/>
 	<name value="TestScript"/>
 	<title value="Test Script"/>
 	<status value="draft"/>
@@ -87,7 +90,7 @@
 				<severity value="warning"/>
 				<human value="Name should be usable as an identifier for the module by machine processing applications such as code generation"/>
 				<expression value="name.exists() implies name.matches('^[A-Z]([A-Za-z0-9_]){1,254}$')"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<mapping>
 				<identity value="workflow"/>
@@ -547,13 +550,6 @@
 			<type>
 				<code value="BackboneElement"/>
 			</type>
-			<constraint>
-				<key value="tst-1"/>
-				<severity value="error"/>
-				<human value="TestScript metadata capability will contain required or validated or both."/>
-				<expression value="capability.required.exists() or capability.validated.exists()"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
-			</constraint>
 		</element>
 		<element id="TestScript.metadata.link">
 			<path value="TestScript.metadata.link"/>
@@ -595,7 +591,13 @@
 			<type>
 				<code value="BackboneElement"/>
 			</type>
-			<condition value="tst-1"/>
+			<constraint>
+				<key value="tst-1"/>
+				<severity value="error"/>
+				<human value="TestScript metadata capability SHALL contain required or validated or both."/>
+				<expression value="required or validated"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
+			</constraint>
 		</element>
 		<element id="TestScript.metadata.capability.required">
 			<path value="TestScript.metadata.capability.required"/>
@@ -711,7 +713,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="The expectation of whether the test must pass for the system to be considered conformant with the artifact."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/testscript-scope-conformance-codes|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/testscript-scope-conformance-codes|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.scope.phase">
@@ -733,7 +735,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="The phase of testing for this artifact."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.fixture">
@@ -816,7 +818,7 @@
 				<severity value="error"/>
 				<human value="Variable can only contain one of expression, headerField or path."/>
 				<expression value="(expression.empty() and headerField.empty() and path.empty()) or (expression.empty() and (headerField.exists() xor path.exists())) or (headerField.empty() and (expression.exists() xor path.exists())) or (path.empty() and (expression.exists() xor headerField.exists()))"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.variable.name">
@@ -939,7 +941,7 @@
 				<severity value="error"/>
 				<human value="Setup action will contain only one of either a common or an operation or an assert."/>
 				<expression value="common.exists() xor operation.exists() xor assert.exists()"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.setup.action.common">
@@ -965,7 +967,7 @@
 			<max value="1"/>
 			<type>
 				<code value="canonical"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</type>
 		</element>
 		<element id="TestScript.setup.action.common.keyRef">
@@ -1027,7 +1029,7 @@
 				<severity value="error"/>
 				<human value="Setup operation will contain either sourceId or targetId or params or url."/>
 				<expression value="sourceId.exists() or (targetId.count() + url.count() + params.count() = 1) or (type.code in ('capabilities' |'search' | 'transaction' | 'history'))"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.setup.action.operation.type">
@@ -1050,7 +1052,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="FHIR Operation Code Types"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/testscript-operation-codes|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/testscript-operation-codes|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.operation.resource">
@@ -1196,7 +1198,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="The allowable request method or HTTP operation codes."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/http-operations|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/http-operations|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.operation.origin">
@@ -1328,28 +1330,28 @@
 				<severity value="error"/>
 				<human value="Setup action assert will contain either compareToSourceId and compareToSourceExpression, compareToSourceId and compareToSourcePath or neither."/>
 				<expression value="compareToSourceId.empty() xor (compareToSourceExpression.exists() or compareToSourcePath.exists())"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-6"/>
 				<severity value="error"/>
 				<human value="Setup action assert response and responseCode will be empty when direction equals request"/>
 				<expression value="(response.empty() and responseCode.empty() and direction = 'request') or direction.empty() or direction = 'response'"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-7"/>
 				<severity value="error"/>
 				<human value="A setup action assert will define a singular assertion function and prevent overlapping assertion functionality."/>
 				<expression value="extension.exists() or (contentType.count() + expression.count() + headerField.count() + minimumId.count() + navigationLinks.count() + path.count() + requestMethod.count() + requestURL.count() + resource.count() + responseCode.count() + response.count() + validateProfileId.count() &lt;= 1)"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-8"/>
 				<severity value="error"/>
 				<human value="A setup action assert will not allow the use of operator and value with minimumId, navigationLinks or validateProfileId."/>
 				<expression value="extension.exists() or (minimumId.count() + navigationLinks.count() + validateProfileId.count() = 0) or (minimumId.count() + navigationLinks.count() + validateProfileId.count() = 1 and operator.count() + value.count() = 0)"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.setup.action.assert.label">
@@ -1416,7 +1418,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="The direction to use for assertions."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/assert-direction-codes|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/assert-direction-codes|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.assert.compareToSourceId">
@@ -1509,7 +1511,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="The default type of manual completion to use for assertion."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/assert-manual-completion-codes|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/assert-manual-completion-codes|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.assert.expression">
@@ -1583,7 +1585,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="The type of operator to use for assertions."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/assert-operator-codes|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/assert-operator-codes|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.assert.path">
@@ -1618,7 +1620,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="The allowable request method or HTTP operation codes."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/http-operations|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/http-operations|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.assert.requestURL">
@@ -1677,7 +1679,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="The response code to expect in the response."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/assert-response-code-types|0.1.0-SNAPSHOT"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/assert-response-code-types|0.1.0-snapshot1"/>
 			</binding>
 		</element>
 		<element id="TestScript.setup.action.assert.responseCode">
@@ -1831,7 +1833,7 @@
 				<severity value="error"/>
 				<human value="Test action will contain only one of either a common or an operation or an assert."/>
 				<expression value="common.exists() xor operation.exists() xor assert.exists()"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.test.action.common">
@@ -1854,7 +1856,7 @@
 				<severity value="error"/>
 				<human value="Test operation will contain either sourceId or targetId or params or url."/>
 				<expression value="sourceId.exists() or (targetId.count() + url.count() + params.count() = 1) or (type.code in ('capabilities' | 'search' | 'transaction' | 'history'))"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.test.action.assert">
@@ -1870,28 +1872,28 @@
 				<severity value="error"/>
 				<human value="Test action assert will contain either compareToSourceId and compareToSourceExpression, compareToSourceId and compareToSourcePath or neither."/>
 				<expression value="compareToSourceId.empty() xor (compareToSourceExpression.exists() or compareToSourcePath.exists())"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-12"/>
 				<severity value="error"/>
 				<human value="Test action assert response and response and responseCode will be empty when direction equals request"/>
 				<expression value="(response.empty() and responseCode.empty() and direction = 'request') or direction.empty() or direction = 'response'"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-13"/>
 				<severity value="error"/>
 				<human value="A test action assert will define a singular assertion function and prevent overlapping assertion functionality."/>
 				<expression value="extension.exists() or (contentType.count() + expression.count() + headerField.count() + minimumId.count() + navigationLinks.count() + path.count() + requestMethod.count() + requestURL.count() + resource.count() + responseCode.count() + response.count() + validateProfileId.count() &lt;= 1)"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-14"/>
 				<severity value="error"/>
 				<human value="A test action assert will not allow the use of operator and value with minimumId, navigationLinks or validateProfileId."/>
 				<expression value="extension.exists() or (minimumId.count() + navigationLinks.count() + validateProfileId.count() = 0) or (minimumId.count() + navigationLinks.count() + validateProfileId.count() = 1 and operator.count() + value.count() = 0)"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.teardown">
@@ -1938,7 +1940,7 @@
 				<severity value="error"/>
 				<human value="Teardown operation will contain either sourceId or targetId or params or url."/>
 				<expression value="sourceId.exists() or (targetId.count() + url.count() + params.count() = 1) or (type.code in ('capabilities' | 'search' | 'transaction' | 'history'))"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.common">
@@ -2031,7 +2033,7 @@
 				<severity value="error"/>
 				<human value="Common action will contain either an operation or assert but not both."/>
 				<expression value="operation.exists() xor assert.exists()"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.common.action.operation">
@@ -2046,7 +2048,7 @@
 				<severity value="error"/>
 				<human value="Common operation will contain either sourceId or targetId or params or url."/>
 				<expression value="sourceId.exists() or (targetId.count() + url.count() + params.count() = 1) or (type.code in ('capabilities' | 'search' | 'transaction' | 'history'))"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 		<element id="TestScript.common.action.assert">
@@ -2062,28 +2064,28 @@
 				<severity value="error"/>
 				<human value="Common action assert will contain either compareToSourceId and compareToSourceExpression, compareToSourceId and compareToSourcePath or neither."/>
 				<expression value="compareToSourceId.empty() xor (compareToSourceExpression.exists() or compareToSourcePath.exists())"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-19"/>
 				<severity value="error"/>
 				<human value="Common action assert response and response and responseCode will be empty when direction equals request"/>
 				<expression value="(response.empty() and responseCode.empty() and direction = 'request') or direction.empty() or direction = 'response'"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-20"/>
 				<severity value="error"/>
 				<human value="A common action assert will define a singular assertion function and prevent overlapping assertion functionality."/>
 				<expression value="extension.exists() or (contentType.count() + expression.count() + headerField.count() + minimumId.count() + navigationLinks.count() + path.count() + requestMethod.count() + requestURL.count() + resource.count() + responseCode.count() + response.count() + validateProfileId.count() &lt;= 1)"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 			<constraint>
 				<key value="tst-21"/>
 				<severity value="error"/>
 				<human value="A common action assert will not allow the use of operator and value with minimumId, navigationLinks or validateProfileId."/>
 				<expression value="extension.exists() or (minimumId.count() + navigationLinks.count() + validateProfileId.count() = 0) or (minimumId.count() + navigationLinks.count() + validateProfileId.count() = 1 and operator.count() + value.count() = 0)"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
 			</constraint>
 		</element>
 	</differential>

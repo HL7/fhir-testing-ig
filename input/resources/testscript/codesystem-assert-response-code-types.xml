@@ -48,7 +48,7 @@
   </contact>
   <description value="The type of response code to use for assertion."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/assert-response-code-types|0.1.0-SNAPSHOT"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/assert-response-code-types|0.1.0-snapshot1"/>
   <content value="complete"/>
   <concept>
     <code value="continue"/>

@@ -20,7 +20,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1081"/>
   </identifier>
-  <version value="0.1.0-SNAPSHOT"/>
+  <version value="0.1.0-snapshot1"/>
   <name value="ShareableTestScript"/>
   <title value="Shareable Test Script"/>
   <status value="draft"/>
@@ -52,7 +52,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="TestScript"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1"/>
   <derivation value="constraint"/>
   <differential>
     <element id="TestScript">

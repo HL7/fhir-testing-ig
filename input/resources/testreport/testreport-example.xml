@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TestReport xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestReport|0.1.0-SNAPSHOT">
+<TestReport xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestReport|0.1.0-snapshot1">
 	<id value="testreport-example"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>

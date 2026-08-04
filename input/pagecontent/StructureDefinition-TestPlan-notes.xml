@@ -1,7 +1,7 @@
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml ../../schema/fhir-xhtml.xsd" xmlns="http://www.w3.org/1999/xhtml">
 
 <a name="scopeoftesting"> </a>
-<h4>Scope of testing</h4>
+<h4>Scope of Testing</h4>
 <p>
 The scope element defines what the TestPlan is testing. This serves no functional purpose during the execution
 of the tests, but is used to provide context for the TestPlan and its tests. The scope can be one of the following:
@@ -119,14 +119,16 @@ Parameter values can be provided as constants (strings, numbers, booleans, dates
 or a parameter can be defined by an expression. It's in the expression that the power of test plans 
 truly comes to life. It's up to the runner to define how these expressions work, but the general 
 expectation is that runners will support FHIRPath expressions, and that the inputs and expected outputs of 
-other tests in the TestPlan can be referenced in the expressions. Runners MAY choose to use this
-FHIRPath syntax for such references:
+other tests in the TestPlan can be referenced in the expressions. 
 </p>
+<div class="fhir-conformance" summary="Runners MAY choose to use this FHIRPath syntax for such references: {{%plan.suite('name').test('name').[data]('name').value}}">
+<p>Runners MAY choose to use this FHIRPath syntax for such references:</p>
 <pre>
 {% raw %}
 {{%plan.suite('name').test('name').[data]('name').value}}
 {% endraw %}
 </pre>
+</div>
 <p>
 The value is a direct reference to the root element in the whatever data is being referenced. 
 <code>[data]</code> must be replaced with one of <code>input()</code>, <code>expected()</code> and <code>actual()</code>.
@@ -138,9 +140,11 @@ there is no ability to use the FHIRPath expression, but most inputs and expected
 <a name="testreports"> </a>
 <h4>Test Reports</h4>
 
+<div class="fhir-conformance" summary="The outcomes of a TestPlan execution MAY be reported using the TestReport resource, though this is not required. Runners MAY choose to report the results in any format they like">
 <p>
 The outcomes of a TestPlan execution MAY be reported using the <a href="StructureDefinition-TestReport.html">TestReport</a> resource,
 though this is not required. Runners MAY choose to report the results in any format they like.
 </p>
+</div>
 
 </div>

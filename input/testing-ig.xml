@@ -12,7 +12,7 @@
     <valueInteger value="4"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/testing/ImplementationGuide/hl7.fhir.uv.testing"/>
-  <version value="0.1.0-SNAPSHOT"/>
+  <version value="0.1.0-snapshot1"/>
   <name value="FHIRTestingIG"/>
   <title value="FHIR Testing IG"/>
   <status value="active"/>
@@ -38,7 +38,7 @@
   <dependsOn id="hl7Tools">
     <uri value="http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools"/>
     <packageId value="hl7.fhir.uv.tools.r5"/>
-    <version value="current"/>
+    <version value="1.1.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-link-dependency">

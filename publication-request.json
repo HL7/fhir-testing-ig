@@ -1,0 +1,17 @@
+{
+  "package-id" : "hl7.fhir.uv.testing",
+  "version" : "0.1.0-snapshot1",
+  "path" : "http://hl7.org/fhir/uv/testing/0.1.0-snapshot1",
+  "mode" : "working",
+  "status" : "draft",
+  "sequence" : "STU 1",
+  "desc" : "First stable publication - to support IG Publisher",
+  "category" : "Incubator",
+  "title" : "Testing Incubator",
+  "registry-description" : "FHIR R6 Testing Incubator",
+  "registry-country" : "uv",
+  "registry-authority" : "hl7",
+  "introduction" : "This is the Incubator the FHIR R6 Testing Resources",
+  "ci-build" : "https://build.fhir.org/ig/HL7/fhir-testing-ig",
+  "first" : true
+}

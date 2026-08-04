@@ -48,7 +48,7 @@
   </contact>
   <description value="The type of operator to use for assertion."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/assert-operator-codes|0.1.0-SNAPSHOT"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/assert-operator-codes|0.1.0-snapshot1"/>
   <content value="complete"/>
   <concept>
     <code value="equals"/>

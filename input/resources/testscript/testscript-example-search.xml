@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-SNAPSHOT">
+<TestScript xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/TestScript|0.1.0-snapshot1">
   <id value="testscript-example-search"/>
   <url value="http://hl7.org/fhir/TestScript/testscript-example-search"/>
   <identifier>
