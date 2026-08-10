@@ -322,30 +322,32 @@ See <a href="valueset-assert-response-code-types.html">response codes</a> for co
 </pre></div>
 <p>See <a href="valueset-assert-response-code-types.html">response codes</a> for complete list.</p>
 
-<p>Verify that the search operation returned the right resource type:</p>
+<p>Verify that the search operation returned the correct Bundle resource type:</p>
 <div class="xmlCode"><pre validationRule="TestScript.setup">
 &lt;action&gt;
   &lt;assert&gt;
-    &lt;resource value=&quot;Patient&quot; /&gt;
+    &lt;resource value=&quot;Bundle&quot; /&gt;
   &lt;/assert&gt;
 &lt;/action&gt;
 </pre></div>
 
-<p>There are many ways to verify that the search operation returned the right Patient:</p>
+<p>There are many ways to verify that the search operation returned the expected, matched Patient:</p>
 <ol>
 <li>
 <p>Explicitly compare the elements to known value:</p>
 <div class="xmlCode"><pre validationRule="TestScript.setup">
 &lt;action&gt;
   &lt;assert&gt;
-    &lt;path value=&quot;fhir:Patient/fhir:birthDate/@value&quot;/&gt;
+    &lt;expression&gt;
+      &lt;expression value=&quot;Bundle.entry[0].resource.birthDate&quot;/&gt;
+    &lt;/expression&gt;
     &lt;sourceId value=&quot;R1&quot;/&gt;
     &lt;value value=&quot;1974-12-31&quot; /&gt;
   &lt;/assert&gt;
 &lt;/action&gt;
 </pre></div>
 <p>The <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.sourceId">sourceId</a> element is pointed to the <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.responseId">responseId</a> value of the search operation. If no <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.sourceId">sourceId</a> is specified, then test engines will use the response of the last operation in the test script even if <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.responseId">responseId</a> was not specified in the operation.</p>
-<p>The <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.path">path</a> element holds a FHIRPath expression against the response body contents.</p>
+<p>The <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.assert.expression">expression</a> element holds a FHIRPath expression against the response body contents.</p>
 </li>
 <li>
 <p>Compare the elements in response to elements in another fixture that is either dynamically set by <a href="StructureDefinition-TestScript-definitions.html#TestScript.setup.action.operation.responseId">responseId</a> or defined statically by the <a href="StructureDefinition-TestScript-definitions.html#TestScript.fixture">fixture</a> element at the top of the script:</p>
@@ -353,8 +355,12 @@ See <a href="valueset-assert-response-code-types.html">response codes</a> for co
 &lt;action&gt;
   &lt;assert&gt;
     &lt;compareToSourceId value=&quot;F1&quot;/&gt;
-    &lt;compareToSourcePath value=&quot;fhir:Patient/fhir:birthDate/@value&quot;/&gt;
-    &lt;path value=&quot;fhir:Patient/fhir:birthDate/@value&quot;/&gt;
+    &lt;compareToSourceExpression&gt;
+      &lt;expression value=&quot;Patient.birthDate&quot;/&gt;
+    &lt;/compareToSourceExpression&gt;
+    &lt;expression&gt;
+      &lt;expression value=&quot;Bundle.entry[0].resource.birthDate&quot;/&gt;
+    &lt;/expression&gt;
   &lt;/assert&gt;
 &lt;/action&gt;
 </pre></div>
